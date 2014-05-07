@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <program_description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.decision-deck.org/ws/_downloads/description.xsd">
     <program provider="PutPoznan"
-        name="extremeRankingAnalysis"
-        displayName="extremeRankingAnalysis"
+        name="findNecessaryAndPossiblePreferenceRelations"
+        displayName="findNecessaryAndPossiblePreferenceRelations"
         version="1.0" />
     <documentation>
-        <description>Finds best and worst possible position in ROR ranking.</description>
+        <description>Finds all possible and necessary relations.</description>
         <contact>Pawel Rychly (pawelrychly@gmail.com).</contact>
     </documentation>
     
@@ -232,46 +232,54 @@ value functions
             <xmcda tag="methodMessages"/>
         </output>
         
-        <output id="best-ranking"
-            name="best-ranking"
-            displayName="best ranking">
+        <output id="necessary-relations"
+            name="necessary-relations"
+            displayName="necessary relations">
             
             <documentation>
-                <description>The best possible ranking position for each alternatives.</description>
+                <description>List of necessary relations between pairs of alternatives.</description>
             </documentation>
-            <xmcda tag="alternativesValues">
+            <xmcda tag="alternativesComparisons">
                 <![CDATA[
-                    <alternativesValues>
-						<alternativeValue>
-							<alternativeID>[...]</alternativeID>
-							<value>
-								<real>[...]</real>
-							</value>
-						 </alternativeValue>
-                        [...]
-                    </alternativesValues>
+                    <alternativesComparisons mcdaConcept="necessaryRelations">
+                        <pairs>
+                          <pair>
+                            <initial>
+                              <alternativeID>a01</alternativeID>
+                            </initial>
+                            <terminal>
+                              <alternativeID>a01</alternativeID>
+                            </terminal>
+                          </pair>
+                          [...]
+                      </pairs>
+                    </alternativesComparisons>
                     ]]>
             </xmcda>
         </output>
 		
-		<output id="worst-ranking"
-            name="worst-ranking"
-            displayName="worst ranking">
+		<output id="possible-relations"
+            name="possible-relations"
+            displayName="possible relations">
             
             <documentation>
-                <description>The worst possible ranking position for each alternatives.</description>
+                <description>List of possible relations between pairs of alternatives.</description>
             </documentation>
-            <xmcda tag="alternativesValues">
+            <xmcda tag="alternativesComparisons">
                 <![CDATA[
-                    <alternativesValues>
-						<alternativeValue>
-							<alternativeID>[...]</alternativeID>
-							<value>
-								<real>[...]</real>
-							</value>
-						 </alternativeValue>
-                        [...]
-                    </alternativesValues>
+                    <alternativesComparisons mcdaConcept="possibleRelations">
+                        <pairs>
+                          <pair>
+                            <initial>
+                              <alternativeID>a01</alternativeID>
+                            </initial>
+                            <terminal>
+                              <alternativeID>a01</alternativeID>
+                            </terminal>
+                          </pair>
+                          [...]
+                      </pairs>
+                    </alternativesComparisons>
                     ]]>
             </xmcda>
         </output>
