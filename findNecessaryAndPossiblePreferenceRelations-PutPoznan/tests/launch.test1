@@ -1,1 +1,2 @@
-R --slave --vanilla --args "${PWD}/in1" "${PWD}/out1" < ../findNecessaryAndPossiblePreferenceRelations.R
+R --slave --vanilla --args "${PWD}/in1" "${PWD}/out1
+" < ../findNecessaryAndPossiblePreferenceRelations.R

@@ -57,17 +57,23 @@ if (is_proper_data) { #optional paramenters
     filename=intensities.of.preferences.filename ,performances=performances$data)
   if (intensities.of.preferences.data$status == "OK") {
     intensities.of.preferences =  intensities.of.preferences.data$data
-  } 
+  } else {
+      errData <- paste(errData,  intensities.of.preferences.data$errData)
+  }
   
   preferences.data <- rorranking:::getPreferencesFromXmcdaFile(filename=preferences.filename, performances=performances$data)
   if (preferences.data$status == "OK") {
     preferences = preferences.data$data
-  } 
+  } else {
+    errData <- paste(errData,  preferences.data$errData)
+  }
   print(preferences.data)
   
   rank.related.preferences.data = rorranking:::getRankRelatedPreferencesFromXmcdaFile(rank.related.preferences.filename, performances$data)
   if (rank.related.preferences.data$status == "OK") {
     rank.related.preferences = rank.related.preferences.data$data
+  } else {
+    errData <- paste(errData,  rank.related.preferences.data$errData)
   }
   
   characteristic.points.data <- rorranking:::getCharacteristicPointsFromXmcdaFile(filename=characteristic.points.filename,
@@ -75,12 +81,16 @@ if (is_proper_data) { #optional paramenters
   
   if (characteristic.points.data$status == "OK") {
     nums.of.characteristic.points <- characteristic.points.data$data  
+  } else {
+    errData <- paste(errData,  characteristic.points.data$errData)
   }
   params.data <- rorranking:::getParametersDataFromXmcdaFile(filename=parameters.filename,
                                                              keys=c("strict"), defaults=list("strict" = TRUE))
   
   if (params.data$status == "OK") {
     strict <- params.data$data[['strict']]
+  } else {
+    errData <- paste(errData, params.data$errData)
   }
   
 }
@@ -178,7 +188,9 @@ if (!is.null(errCalc)){
   
 }
 
-if (!is.null(errData)){
+if ((!is.null(errData)) && (length(errData) > 0)){
+  print("DATA")
+  print(errData)
   outTreeMessage = newXMLDoc()  
   newXMLNode("xmcda:XMCDA", 
              attrs=c("xsi:schemaLocation" = "http://www.decision-deck.org/2012/XMCDA-2.2.0 http://www.decision-deck.org/xmcda/_downloads/XMCDA-2.2.0.xsd"),
