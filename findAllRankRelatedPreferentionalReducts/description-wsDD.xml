@@ -215,27 +215,21 @@ value functions
             displayName="reducts by necessary relations">
             
             <documentation>
-                <description>List of necessary relations. Reducts are described as a label values assigned to relations.</description>
+                <description>List of alternatives. Reducts are described as a label values assigned to alternative.</description>
             </documentation>
             <xmcda tag="alternativesComparisons">
                 <![CDATA[
-                    <alternativesComparisons mcdaConcept="necessaryRelations">
-                        <pairs>
-                          <pair>
-                            <initial>
-                              <alternativeID>%1</alternativeID>
-                            </initial>
-                            <terminal>
-                              <alternativeID>%2</alternativeID>
-                            </terminal>
-                            <values>
-                                <value><label>%3</label></value>
-                                [...]
-                            </values>
-                          </pair>
-                          [...]
-                      </pairs>
-                    </alternativesComparisons>
+                    <alternativesValues>
+                        <alternativeValue>
+                          <alternativeID>%1</alternativeID>
+                          <values>
+                            <value>
+                              <label>%2</label>
+                            </value>
+                          </values>
+                        </alternativeValue>
+                        [...]
+                    </alternativesValues>
                     ]]>
             </xmcda>
         </output>

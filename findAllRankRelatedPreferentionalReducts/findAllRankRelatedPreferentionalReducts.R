@@ -118,22 +118,20 @@ if (is.null(errFile) && is_proper_data){
 setwd(outDirectory)
 if (execFlag) {
   outTreeReducts = newXMLDoc()
-  
+  print(results)
   newXMLNode("xmcda:XMCDA",
              attrs=c("xsi:schemaLocation" = "http://www.decision-deck.org/2012/XMCDA-2.2.0 http://www.decision-deck.org/xmcda/_downloads/XMCDA-2.2.0.xsd"),
              suppressNamespaceWarning=TRUE,
              namespace = c("xsi" = "http://www.w3.org/2001/XMLSchema-instance", "xmcda" = "http://www.decision-deck.org/2012/XMCDA-2.2.0"),
              parent=outTreeReducts)
-  
-  id <- 0
-  relations = list()
-  reducts.by.relations = list()
+ 
+  alternativeIds <- rownames(performances)
+  reducts.by.alternatives = list()
   for (key in names(results)) {
-    id = id + 1
-    relation <- strsplit(key, " >=^N ", TRUE)[[1]]
-    relations[[key]] = relation
-    reducts.by.relations[[key]] <- list()
+    alternativeId <- strsplit(key, " :[", TRUE)[[1]][[1]]
+    
     reducts <- results[[key]]
+    reducts.by.alternatives[[alternativeId]] <- list()
     if ((is.character(reducts)) && (reducts == " EMPTY SET ")) {
       next
     }
@@ -152,12 +150,14 @@ if (execFlag) {
         reduct.str <- sub(">=", "weak", reduct.str, ignore.case = TRUE)
         reduct.str <- sub(">", "strong", reduct.str, ignore.case = TRUE)
         reduct.str <- sub("==", "indif", reduct.str, ignore.case = TRUE)
-        reducts.by.relations[[key]] <- append(reducts.by.relations[[key]], reduct.str)
+        reducts.by.alternatives[[alternativeId]] <- append(reducts.by.alternatives[[alternativeId]], reduct.str)
       }
-    }    
+    } 
+    
   }
-  print(reducts.by.relations)
-  rorranking:::putAlternativesComparisonsWithReductsData(outTreeReducts, relations, reducts.by.relations)
+  
+  print(reducts.by.alternatives)
+  rorranking:::putAlternativesValuesWithReductsData(outTreeReducts, reducts.by.alternatives)
   saveXML(outTreeReducts, file=reducts.filename)
 }
 
