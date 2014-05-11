@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <program_description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.decision-deck.org/ws/_downloads/description.xsd">
     <program provider="PutPoznan"
-        name="extremeRankingAnalysisHierarchical"
-        displayName="extremeRankingAnalysisHierarchical"
+        name="findNecessaryAndPossiblePreferenceRelationsHierarchical"
+        displayName="findNecessaryAndPossiblePreferenceRelationsHierarchical"
         version="1.0" />
     <documentation>
-        <description> Function finds extreme ranks for each alternative in a given problem. In this version of function, a hierarchical informations are considered.  </description>
+        <description> Function all possible and necessary relations. In this version of function, a hierarchical informations are considered.  </description>
         <contact>Pawel Rychly (pawelrychly@gmail.com).</contact>
     </documentation>
     
@@ -83,7 +83,7 @@
             <documentation>
                 <description>Description of hierarchical structure of criteria. Each node of hierarchy, should have an unique id attribute. Leaves of a tree, should contain a set of criteria. </description>
             </documentation>
-            <xmcda tag="hierarhchy">
+            <xmcda tag="hierarchy">
                 <![CDATA[
                     <hierarchy>
                         <node id="nodes">
@@ -264,46 +264,54 @@ value functions
             <xmcda tag="methodMessages"/>
         </output>
         
-        <output id="best-ranking-hierarchical"
-            name="best-ranking-hierarchical"
-            displayName="best ranking hierarchical">
+        <output id="necessary-relations-hierarchical"
+            name="necessary-relations-hierarchical"
+            displayName="necessary relations hierarchical">
             
             <documentation>
-                <description>The best possible ranking position for each alternatives. Each alternative value group describe a node of hierarchy tree marked in id attribute</description>
+                <description>List of necessary relations between pairs of alternatives. Each alternativesComparisons tag describe a node of hierarchy tree marked in id attribute</description>
             </documentation>
-            <xmcda tag="alternativesValues">
+            <xmcda tag="alternativesComparisons">
                 <![CDATA[
-                    <alternativesValues id=%1>
-						<alternativeValue>
-							<alternativeID>[...]</alternativeID>
-							<value>
-								<real>[...]</real>
-							</value>
-						 </alternativeValue>
-                        [...]
-                    </alternativesValues>
+                    <alternativesComparisons mcdaConcept="necessaryRelations" id="%1">
+                        <pairs>
+                          <pair>
+                            <initial>
+                              <alternativeID>%2</alternativeID>
+                            </initial>
+                            <terminal>
+                              <alternativeID>%3</alternativeID>
+                            </terminal>
+                          </pair>
+                          [...]
+                      </pairs>
+                    </alternativesComparisons>
                     ]]>
             </xmcda>
         </output>
-		
-		<output id="worst-ranking-hierarchical"
-            name="worst-ranking-hierarchical"
-            displayName="worst ranking hierarchical">
+        
+        <output id="possible-relations-hierarchical"
+            name="possible-relations-hierarchical"
+            displayName="possible relations hierarchical">
             
             <documentation>
-                <description>The worst possible ranking position for each alternatives. Each alternative value group describe a node of hierarchy tree marked in id attribute</description>
+                <description>List of possible relations between pairs of alternatives. Each alternativesComparisons tag describe a node of hierarchy tree marked in id attribute</description>
             </documentation>
-            <xmcda tag="alternativesValues">
+            <xmcda tag="alternativesComparisons">
                 <![CDATA[
-                    <alternativesValues id=%1>
-						<alternativeValue>
-							<alternativeID>[...]</alternativeID>
-							<value>
-								<real>[...]</real>
-							</value>
-						 </alternativeValue>
-                        [...]
-                    </alternativesValues>
+                    <alternativesComparisons mcdaConcept="possibleRelations" id=%1>
+                        <pairs>
+                          <pair>
+                            <initial>
+                              <alternativeID>%1</alternativeID>
+                            </initial>
+                            <terminal>
+                              <alternativeID>%2</alternativeID>
+                            </terminal>
+                          </pair>
+                          [...]
+                      </pairs>
+                    </alternativesComparisons>
                     ]]>
             </xmcda>
         </output>

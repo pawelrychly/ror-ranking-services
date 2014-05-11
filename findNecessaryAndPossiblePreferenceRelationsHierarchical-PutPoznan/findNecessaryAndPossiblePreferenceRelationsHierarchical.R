@@ -1,14 +1,14 @@
 ##########################################
 # Usage:
-# R --slave --vanilla --args "[inDirectory]" "[outDirectory]" < findNecessaryAndPossiblePreferenceRelations.R
+# R --slave --vanilla --args "[inDirectory]" "[outDirectory]" < extremeRankingAnalysis.R
 # Example: 
-# R --slave --vanilla --args "${PWD}/in" "${PWD}/out" < findNecessaryAndPossiblePreferenceRelations.R
+# R --slave --vanilla --args "${PWD}/in" "${PWD}/out" < extremeRankingAnalysis.R
 ##########################################
 
 inDirectory <- commandArgs()[5] 
 outDirectory <- commandArgs()[6]  
-#inDirectory <- "/home/pawel/Projects/ror-workspace/robust-ordinal-regresion/tests/in2" 
-#outDirectory <-"/home/pawel/Projects/ror-workspace/robust-ordinal-regresion/tests/out2" 
+#inDirectory <- "/home/pawel/Projects/ror-workspace/robust-ordinal-regresion/tests/in1" 
+#outDirectory <-"/home/pawel/Projects/ror-workspace/robust-ordinal-regresion/tests/out1" 
 ##########################################
 # Set the working directory as the "in" directory
 ##########################################
@@ -25,14 +25,16 @@ execFlag<-FALSE
 alternatives.filename = "alternatives.xml"
 criteria.filename = "criteria.xml"
 performances.filename = "performances.xml"
+hierarchy.of.criteria.filename = "hierarchy-of-criteria.xml"
 preferences.filename = "preferences.xml"
 characteristic.points.filename = "characteristic-points.xml"
-input.best.ranks.filename = "best-ranking.xml"
-input.worst.ranks.filename = "worst-ranking.xml"
 parameters.filename = "parameters.xml"
+rank.related.preferences.filename = "rank-related-requirements.xml"
+intensities.of.preferences.filename = "intensities-of-preferences.xml"
 
 #OUTPUT FILES:
-reducts.filename <- "reducts-by-alternatives.xml"
+result.file.nec <- "necessary-relations-hierarchical.xml"
+result.file.pos <- "possible-relations-hierarchical.xml"
 result.file.messages <- "messages.xml"
 
 is_proper_data = TRUE
@@ -40,35 +42,53 @@ performances <- rorranking:::getPerformancesFromXmcdaFiles(alternatives.filename
                                                                 criteria.filename=criteria.filename,
                                                                 performances.filename=performances.filename)
 
-ranks = rorranking:::getExtremeRanksFromXmcdaFile(worst.ranking.filename = input.worst.ranks.filename,
-                                                  best.ranking.filename = input.best.ranks.filename, performances = performances$data)
+hierarchy.data = rorranking:::getHierarchyOfCriteriaFromXmcdaFile(hierarchy.of.criteria.filename)
 
 if (performances$status != "OK") {
   errFile <- paste(errFile, performances$errFile)
   errData <- paste(errData, performances$errData)
   is_proper_data = FALSE
 } 
-if (ranks$status != "OK") {
-  errFile <- paste(errFile, ranks$errFile)
-  errData <- paste(errData, ranks$errData)
+
+if (hierarchy.data$status != "OK") {
+  errFile <- paste(errFile, hierarchy.data$errFile)
+  errData <- paste(errData, hierarchy.data$errData)
   is_proper_data = FALSE
-}
+} 
 
 #optional
 preferences = list("strong" = NULL, "weak" = NULL, "indif" = NULL)
+intensities.of.preferences =  list("strong" = NULL, "weak" = NULL, "indif" = NULL)
+rank.related.preferences = NULL
 nums.of.characteristic.points = NULL
-nec.relations = list()
 strict = FALSE
 if (is_proper_data) { #optional paramenters
+  intensities.of.preferences.data <- rorranking:::getIntensitiesOfPreferencesFromXmcdaFile(
+    filename=intensities.of.preferences.filename ,performances=performances$data)
+  if (intensities.of.preferences.data$status == "OK") {
+    intensities.of.preferences =  intensities.of.preferences.data$data
+  } else {
+    errData <- paste(errData,  intensities.of.preferences.data$errData)
+  }
+  
   preferences.data <- rorranking:::getPreferencesFromXmcdaFile(filename=preferences.filename, performances=performances$data)
   if (preferences.data$status == "OK") {
     preferences = preferences.data$data
   } else {
-    errData <- paste(errData,  preferences.data$errData)
+    errData <- paste(errData, preferences.data$errData)
   }
   print(preferences.data)
+  
+  rank.related.preferences.data = rorranking:::getRankRelatedPreferencesFromXmcdaFile(rank.related.preferences.filename, performances$data)
+  if (rank.related.preferences.data$status == "OK") {
+    rank.related.preferences = rank.related.preferences.data$data
+  } else {
+    errData <- paste(errData,  rank.related.preferences.data$errData)
+  }
+  
   characteristic.points.data <- rorranking:::getCharacteristicPointsFromXmcdaFile(filename=characteristic.points.filename,
                                                                                   performances=performances$data)
+  
   if (characteristic.points.data$status == "OK") {
     nums.of.characteristic.points <- characteristic.points.data$data  
   } else {
@@ -80,7 +100,7 @@ if (is_proper_data) { #optional paramenters
   if (params.data$status == "OK") {
     strict <- params.data$data[['strict']]
   } else {
-    errData <- paste(errData, params.data$errData)
+    errData <- paste(errData,  params.data$errData)
   }
   
 }
@@ -93,72 +113,78 @@ print("weak.prefs")
 print(preferences$weak)
 print("indif.prefs")
 print(preferences$indif)
+print("strong.intensities.of.prefs")
+print(intensities.of.preferences$strong)
+print("weak.intensities.of.prefs")
+print(intensities.of.preferences$weak)
+print("indif.intensities.of.prefs")
+print(intensities.of.preferences$indif)
 print("strict")
 print(strict)
 print("nums.of.characteristic.points")
 print(nums.of.characteristic.points)
-print("ranks")
-print(ranks)
+print("rank.related")
+print(rank.related.preferences)
 
 if (is.null(errFile) && is_proper_data){
   tmpErr<- try (
     {
-      results <- findAllRankRelatedPreferentionalReducts(
-        perf = performances$data, ranks=ranks$data, strict.vf=strict, 
+      results <- findNecessaryAndPossiblePreferenceRelationsHierarchical(
+        perf = performances$data, 
         strong.prefs = preferences$strong, weak.prefs=preferences$weak, indif.prefs=preferences$indif,
-        nums.of.characteristic.points=nums.of.characteristic.points) 
+        strong.intensities.of.prefs = intensities.of.preferences$strong,
+        weak.intensities.of.prefs = intensities.of.preferences$weak,
+        indif.intensities.of.prefs = intensities.of.preferences$indif,
+        rank.related.requirements=rank.related.preferences,
+        strict.vf=strict, nums.of.characteristic.points=nums.of.characteristic.points, hierarchy.data=hierarchy.data$data) 
     }, silent=TRUE
   )  
+
   if (inherits(tmpErr, 'try-error')){
-    errCalc<<-"Cannot find reducts."
+    errCalc<<-"Cannot find relations."
   } else {
     execFlag<-TRUE
   }
 }
+
 setwd(outDirectory)
 if (execFlag) {
-  outTreeReducts = newXMLDoc()
-  print(results)
+  
+  outTreeNec = newXMLDoc()
+  outTreePos = newXMLDoc()
   newXMLNode("xmcda:XMCDA",
              attrs=c("xsi:schemaLocation" = "http://www.decision-deck.org/2012/XMCDA-2.2.0 http://www.decision-deck.org/xmcda/_downloads/XMCDA-2.2.0.xsd"),
              suppressNamespaceWarning=TRUE,
              namespace = c("xsi" = "http://www.w3.org/2001/XMLSchema-instance", "xmcda" = "http://www.decision-deck.org/2012/XMCDA-2.2.0"),
-             parent=outTreeReducts)
- 
-  alternativeIds <- rownames(performances)
-  reducts.by.alternatives = list()
-  for (key in names(results)) {
-    alternativeId <- strsplit(key, " :[", TRUE)[[1]][[1]]
-    
-    reducts <- results[[key]]
-    reducts.by.alternatives[[alternativeId]] <- list()
-    if ((is.character(reducts)) && (reducts == " EMPTY SET ")) {
-      next
-    }
-    for (reduct in reducts) {
-      reduct.str <- ""
-      if (length(reduct) > 0) {
-        i <- 0
-        for (comparison in reduct) {
-          if (i > 0) {
-            reduct.str <- paste(reduct.str, comparison, sep=", ") 
-          } else {
-            reduct.str <- comparison
-            i = i + 1
-          }
-        }
-        reduct.str <- sub(">=", "weak", reduct.str, ignore.case = TRUE)
-        reduct.str <- sub(">", "strong", reduct.str, ignore.case = TRUE)
-        reduct.str <- sub("==", "indif", reduct.str, ignore.case = TRUE)
-        reducts.by.alternatives[[alternativeId]] <- append(reducts.by.alternatives[[alternativeId]], reduct.str)
-      }
-    } 
-    
-  }
+             parent=outTreeNec)
+  newXMLNode("xmcda:XMCDA",
+             attrs=c("xsi:schemaLocation" = "http://www.decision-deck.org/2012/XMCDA-2.2.0 http://www.decision-deck.org/xmcda/_downloads/XMCDA-2.2.0.xsd"),
+             suppressNamespaceWarning=TRUE,
+             namespace = c("xsi" = "http://www.w3.org/2001/XMLSchema-instance", "xmcda" = "http://www.decision-deck.org/2012/XMCDA-2.2.0"),
+             parent=outTreePos)
   
-  print(reducts.by.alternatives)
-  rorranking:::putAlternativesValuesWithReductsData(outTreeReducts, reducts.by.alternatives)
-  saveXML(outTreeReducts, file=reducts.filename)
+  ids <- rownames(performances$data)
+  
+  for (nodeid in names(results$nec.relations)) {
+    nec.relations <- matrix(nrow=0, ncol=2)
+    pos.relations <- matrix(nrow=0, ncol=2)
+    for (id1 in ids) {
+      for (id2 in ids) {
+        if (results$nec.relations[[nodeid]][id1,id2]) {
+          nec.rel <- c(id1, id2)
+          nec.relations <- rbind(nec.relations, nec.rel)
+        } 
+        if (results$pos.relations[[nodeid]][id1,id2]) {
+          pos.rel <- c(id1, id2)
+          pos.relations <- rbind(pos.relations, pos.rel)
+        }
+      }
+    }
+    rorranking:::putAlternativesComparisonsWithAttributes(outTreeNec, nec.relations, attributes=c("id"=nodeid))
+    rorranking:::putAlternativesComparisonsWithAttributes(outTreePos, pos.relations, attributes=c("id"=nodeid))
+  }
+  saveXML(outTreeNec, file=result.file.nec)
+  saveXML(outTreePos, file=result.file.pos)
 }
 
 if (!is.null(errCalc)){

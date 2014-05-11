@@ -33,8 +33,8 @@ rank.related.preferences.filename = "rank-related-requirements.xml"
 intensities.of.preferences.filename = "intensities-of-preferences.xml"
 
 #OUTPUT FILES:
-result.file.worst <- "worst-ranking.xml"
-result.file.best <- "best-ranking.xml"
+result.file.worst <- "worst-ranking-hierarchical.xml"
+result.file.best <- "best-ranking-hierarchical.xml"
 result.file.messages <- "messages.xml"
 
 is_proper_data = TRUE
@@ -170,8 +170,8 @@ if (execFlag) {
     res <-cbind(ids, res)
     results_worst <- res[,1:2]
     results_best <- cbind(res[,1], res[, 3])
-    rorranking:::putAlternativesValuesWithAttributes(outTreeWorst, results_worst, rownames(performances$data), attributes=c("id"=nodeid), mcdaConcept=NULL)
-    rorranking:::putAlternativesValuesWithAttributes(outTreeBest, results_best, rownames(performances$data), attributes=c("id"=nodeid), mcdaConcept=NULL)
+    rorranking:::putAlternativesValuesWithAttributes(outTreeWorst, results_worst, rownames(performances$data), attributes=c("id"=nodeid))
+    rorranking:::putAlternativesValuesWithAttributes(outTreeBest, results_best, rownames(performances$data), attributes=c("id"=nodeid))
   }
   saveXML(outTreeWorst, file=result.file.worst)
   saveXML(outTreeBest, file=result.file.best)
@@ -190,8 +190,6 @@ if (!is.null(errCalc)){
 }
 
 if ((!is.null(errData)) && (length(errData) > 0)){
-  print("DATA")
-  print(errData)
   outTreeMessage = newXMLDoc()  
   newXMLNode("xmcda:XMCDA", 
              attrs=c("xsi:schemaLocation" = "http://www.decision-deck.org/2012/XMCDA-2.2.0 http://www.decision-deck.org/xmcda/_downloads/XMCDA-2.2.0.xsd"),

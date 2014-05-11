@@ -1,0 +1,1 @@
+R --slave --vanilla --args "${PWD}/in4" "${PWD}/out4" < ../extremeRankingAnalysisHierarchical.R

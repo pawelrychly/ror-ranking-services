@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <program_description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.decision-deck.org/ws/_downloads/description.xsd">
     <program provider="PutPoznan"
-        name="findAllRankRelatedPreferentionalReducts"
-        displayName="findAllRankRelatedPreferentionalReducts"
+        name="findAllRankRelatedPreferentionalReductsHierarchical"
+        displayName="findAllRankRelatedPreferentionalReductsHierarchical"
         version="1.0" />
     <documentation>
-        <description>Finds all rank related preferentional reducts.</description>
+        <description> Function finds all rank related preferentional reducts for each alternative. In this version of function, a hierarchical informations are considered.  </description>
         <contact>Pawel Rychly (pawelrychly@gmail.com).</contact>
     </documentation>
-    
     
     <parameters>
         <input id="alternatives"
@@ -77,16 +76,41 @@
             </xmcda>
         </input>
 
-        <input id="worst-ranking"
-            name="worst-ranking"
-            displayName="worst ranking">
+        <input id="hierarchy-of-criteria"
+            name="hierarchy-of-criteria"
+            displayName="hierarchy of criteria"
+            isoptional="0">
+            <documentation>
+                <description>Description of hierarchical structure of criteria. Each node of hierarchy, should have an unique id attribute. Leaves of a tree, should contain a set of criteria. </description>
+            </documentation>
+            <xmcda tag="hierarhchy">
+                <![CDATA[
+                    <hierarchy>
+                        <node id="nodes">
+                            <node id="nodes1">
+                                <criteriaSet>
+                                    <element><criterionID>%1</criterionID></element> [...]  
+                                </criteriaSet>
+                            </node>
+                            [...]
+                        </node>
+                        [...]
+                    </hierarchy>
+                    ]]>
+            </xmcda>
+        </input>
+
+        <input id="worst-ranking-hierarchical"
+            name="worst-ranking-hierarchical"
+            displayName="worst ranking hierarchical"
+            isoptional="0">
             
             <documentation>
-                <description>The worst possible ranking position for each alternatives.</description>
+                <description>The worst possible ranking position for each alternatives. Nodes of hieararchy tree are separated by an alternativesValues tags.</description>
             </documentation>
             <xmcda tag="alternativesValues">
                 <![CDATA[
-                    <alternativesValues>
+                    <alternativesValues id="%1">
                         <alternativeValue>
                             <alternativeID>[...]</alternativeID>
                             <value>
@@ -99,16 +123,17 @@
             </xmcda>
         </input>
         
-        <input id="best-ranking"
-            name="best-ranking"
-            displayName="best ranking">
+        <input id="best-ranking-hierarchical"
+            name="best-ranking-hierarchical"
+            displayName="best ranking hierarchical"
+            isoptional="0">
             
             <documentation>
-                <description>The best possible ranking position for each alternatives.</description>
+                <description>The best possible ranking position for each alternatives. Nodes of hieararchy tree are separated by an alternativesValues tags.</description>
             </documentation>
             <xmcda tag="alternativesValues">
                 <![CDATA[
-                    <alternativesValues>
+                    <alternativesValues id=%1>
                         <alternativeValue>
                             <alternativeID>[...]</alternativeID>
                             <value>
@@ -120,7 +145,6 @@
                     ]]>
             </xmcda>
         </input>
-        
         
         
         <input id="preferences" name="preferences" displayName="preferences"
@@ -128,7 +152,7 @@
             
             <documentation>
                 <description>
-					Set of preference relations between alternatives 
+					Set of preference relations between alternatives. A values linked to pairs, determines an ids of nodes in hierarchy tree. If value is not given, or if it is equal 0, then all criteria are taken into account.   
 				</description>
             </documentation>
             <xmcda tag="alternativesComparisons">
@@ -145,6 +169,9 @@
 								<terminal>
 									<alternativeID>%3</alternativeID>
 								</terminal>
+                                <value>
+                                    <label>%4</label>
+                                </value>
 							</pair>
                             [...]
                         </pairs>
@@ -152,7 +179,6 @@
                     ]]>
             </xmcda>
         </input>
-
 		
 		<input id="characteristic-points" name="characteristic-points" displayName="characteristic points"
             isoptional="1">
@@ -210,21 +236,21 @@ value functions
             <xmcda tag="methodMessages"/>
         </output>
         
-        <output id="reducts-by-necessary-relations"
-            name="reducts-by-necessary-relations"
-            displayName="reducts by necessary relations">
+        <output id="reducts-by-necessary-relations-hierarchical"
+            name="reducts-by-necessary-relations-hierarchical"
+            displayName="reducts by necessary relations hierarchical">
             
             <documentation>
-                <description>List of alternatives. Reducts are described as a label values assigned to alternative.</description>
+                <description>List of alternatives. Reducts are described as a label values assigned to alternative. Nodes of hieararchy tree are separated by an alternativesValues tags. </description>
             </documentation>
-            <xmcda tag="alternativesComparisons">
+             <xmcda tag="alternativesValues">
                 <![CDATA[
-                    <alternativesValues>
+                    <alternativesValues id=%1>
                         <alternativeValue>
-                          <alternativeID>%1</alternativeID>
+                          <alternativeID>%2</alternativeID>
                           <values>
                             <value>
-                              <label>%2</label>
+                              <label>%3</label>
                             </value>
                           </values>
                         </alternativeValue>
