@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<xmcda:XMCDA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xmcda="http://www.decision-deck.org/2012/XMCDA-2.2.0" xsi:schemaLocation="http://www.decision-deck.org/2012/XMCDA-2.2.0 http://www.decision-deck.org/xmcda/_downloads/XMCDA-2.2.0.xsd">
+  <alternativesValues id="nodes11">
+    <alternativeValue>
+      <alternativeID>a01</alternativeID>
+      <value>
+        <real>0.01</real>
+      </value>
+    </alternativeValue>
+  </alternativesValues>
+  <alternativesValues id="nodes12">
+    <alternativeValue>
+      <alternativeID>a01</alternativeID>
+      <value>
+        <real>0.02</real>
+      </value>
+    </alternativeValue>
+  </alternativesValues>
+  <alternativesValues id="nodes1">
+    <alternativeValue>
+      <alternativeID>a01</alternativeID>
+      <value>
+        <real>0.02</real>
+      </value>
+    </alternativeValue>
+  </alternativesValues>
+  <alternativesValues id="nodes2">
+    <alternativeValue>
+      <alternativeID>a01</alternativeID>
+      <value>
+        <real>0.02</real>
+      </value>
+    </alternativeValue>
+  </alternativesValues>
+  <alternativesValues id="nodes">
+    <alternativeValue>
+      <alternativeID>a01</alternativeID>
+      <value>
+        <real>0.04</real>
+      </value>
+    </alternativeValue>
+  </alternativesValues>
+</xmcda:XMCDA>

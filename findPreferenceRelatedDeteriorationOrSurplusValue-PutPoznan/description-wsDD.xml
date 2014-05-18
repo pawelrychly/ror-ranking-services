@@ -362,7 +362,7 @@
             <documentation>
                 <description>Value of deterioration or surplus utility.</description>
             </documentation>
-            <xmcda tag="alternativesValues">
+            <xmcda tag="alternativeValue">
                 <![CDATA[
                     <alternativeValue>
                         <alternativeID>[...]</alternativeID>
