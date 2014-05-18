@@ -67,7 +67,6 @@ if (is_proper_data) { #optional paramenters
   } else {
     errData <- paste(errData,  preferences.data$errData)
   }
-  print(preferences.data)
   
   rank.related.preferences.data = rorranking:::getRankRelatedPreferencesFromXmcdaFile(rank.related.preferences.filename, performances$data)
   if (rank.related.preferences.data$status == "OK") {
@@ -166,10 +165,6 @@ if (execFlag) {
     }
   }
  
-  print(results$pos.relations)  
-  print(pos.relations)
-  print(results$nec.relations)
-  print(nec.relations)
   putAlternativesComparisonsLabels(outTreeNec, nec.relations)
   putAlternativesComparisonsLabels(outTreePos, pos.relations)
   saveXML(outTreeNec, file=result.file.nec)
@@ -189,8 +184,6 @@ if (!is.null(errCalc)){
 }
 
 if ((!is.null(errData)) && (length(errData) > 0)){
-  print("DATA")
-  print(errData)
   outTreeMessage = newXMLDoc()  
   newXMLNode("xmcda:XMCDA", 
              attrs=c("xsi:schemaLocation" = "http://www.decision-deck.org/2012/XMCDA-2.2.0 http://www.decision-deck.org/xmcda/_downloads/XMCDA-2.2.0.xsd"),

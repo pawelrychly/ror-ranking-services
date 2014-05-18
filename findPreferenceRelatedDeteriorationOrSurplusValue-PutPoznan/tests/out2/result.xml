@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<xmcda:XMCDA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xmcda="http://www.decision-deck.org/2012/XMCDA-2.2.0" xsi:schemaLocation="http://www.decision-deck.org/2012/XMCDA-2.2.0 http://www.decision-deck.org/xmcda/_downloads/XMCDA-2.2.0.xsd">
+  <alternativeValue>
+    <alternativeID>a04</alternativeID>
+    <value>
+      <real>0.437777777777778</real>
+    </value>
+  </alternativeValue>
+</xmcda:XMCDA>

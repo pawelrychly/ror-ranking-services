@@ -77,7 +77,6 @@ if (is_proper_data) { #optional paramenters
   } else {
     errData <- paste(errData, preferences.data$errData)
   }
-  print(preferences.data)
   
   rank.related.preferences.data = rorranking:::getRankRelatedPreferencesFromXmcdaFile(rank.related.preferences.filename, performances$data)
   if (rank.related.preferences.data$status == "OK") {

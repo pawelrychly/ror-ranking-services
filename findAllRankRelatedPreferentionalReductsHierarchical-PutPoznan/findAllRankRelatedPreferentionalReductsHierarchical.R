@@ -76,7 +76,6 @@ if (is_proper_data) { #optional paramenters
   } else {
     errData <- paste(errData,  preferences.data$errData)
   }
-  print(preferences.data)
   characteristic.points.data <- rorranking:::getCharacteristicPointsFromXmcdaFile(filename=characteristic.points.filename,
                                                                                   performances=performances$data)
   if (characteristic.points.data$status == "OK") {
@@ -130,7 +129,6 @@ if (is.null(errFile) && is_proper_data){
 setwd(outDirectory)
 if (execFlag) {
   outTreeReducts = newXMLDoc()
-  print(results)
   newXMLNode("xmcda:XMCDA",
              attrs=c("xsi:schemaLocation" = "http://www.decision-deck.org/2012/XMCDA-2.2.0 http://www.decision-deck.org/xmcda/_downloads/XMCDA-2.2.0.xsd"),
              suppressNamespaceWarning=TRUE,
@@ -184,9 +182,7 @@ if (!is.null(errCalc)){
   
 }
 
-if ((!is.null(errData)) && (length(errData) > 0)){
-  print("DATA")
-  print(errData)
+if ((!is.null(errData)) && (length(errData) > 0)) {
   outTreeMessage = newXMLDoc()  
   newXMLNode("xmcda:XMCDA", 
              attrs=c("xsi:schemaLocation" = "http://www.decision-deck.org/2012/XMCDA-2.2.0 http://www.decision-deck.org/xmcda/_downloads/XMCDA-2.2.0.xsd"),

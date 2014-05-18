@@ -1,0 +1,1 @@
+R --slave --vanilla --args "${PWD}/in7" "${PWD}/out7" < ../findRankRelatedDeteriorationOrSurplusValue.R
