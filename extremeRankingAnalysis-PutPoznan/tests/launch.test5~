@@ -1,1 +1,0 @@
-R --slave --vanilla --args "${PWD}/in9" "${PWD}/out9" < ../extremeRankingAnalysis.R
