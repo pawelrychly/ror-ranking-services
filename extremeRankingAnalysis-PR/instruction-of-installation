@@ -1,0 +1,13 @@
+
+
+In order to install this service:
+1. Install all dependencies.
+a) rJava package: install.packages("rJava")
+b) ROI: install.packages("ROI")
+c) ROI.plugin.glpk package: install.packages("ROI.plugin.glpk")
+d) RXMCDA package: install.packages("RXMCDA")
+e) rorranking package.
+	Download and unzip a code of package from https://github.com/pawelrychly/rorranking
+	Build a package: R CMD build name-of-folder
+	Install a package using R code: 
+		install.packages("directory/to/builded/package")
