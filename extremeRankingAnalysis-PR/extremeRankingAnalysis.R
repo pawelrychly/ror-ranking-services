@@ -7,8 +7,7 @@
 
 inDirectory <- commandArgs()[5] 
 outDirectory <- commandArgs()[6]  
-#inDirectory <- "/home/pawel/Projects/ror-workspace/robust-ordinal-regresion/tests/in2" 
-#outDirectory <-"/home/pawel/Projects/ror-workspace/robust-ordinal-regresion/tests/out2" 
+ 
 ##########################################
 # Set the working directory as the "in" directory
 ##########################################

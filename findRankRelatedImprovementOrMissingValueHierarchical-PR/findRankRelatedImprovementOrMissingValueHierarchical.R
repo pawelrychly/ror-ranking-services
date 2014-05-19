@@ -1,8 +1,8 @@
 ##########################################
 # Usage:
-# R --slave --vanilla --args "[inDirectory]" "[outDirectory]" < findRankRelatedImprovementOrMissingValue.R
+# R --slave --vanilla --args "[inDirectory]" "[outDirectory]" < findRankRelatedImprovementOrMissingValueHierarchical.R
 # Example: 
-# R --slave --vanilla --args "${PWD}/in" "${PWD}/out" < findRankRelatedImprovementOrMissingValue.R
+# R --slave --vanilla --args "${PWD}/in" "${PWD}/out" < findRankRelatedImprovementOrMissingValueHierarchical.R
 ##########################################
 
 inDirectory <- commandArgs()[5] 

@@ -1,14 +1,13 @@
 ##########################################
 # Usage:
-# R --slave --vanilla --args "[inDirectory]" "[outDirectory]" < findNecessaryAndPossiblePreferenceRelations.R
+# R --slave --vanilla --args "[inDirectory]" "[outDirectory]" < findPreferentionalReductsForNecessaryRelations.R
 # Example: 
-# R --slave --vanilla --args "${PWD}/in" "${PWD}/out" < findNecessaryAndPossiblePreferenceRelations.R
+# R --slave --vanilla --args "${PWD}/in" "${PWD}/out" < findPreferentionalReductsForNecessaryRelations.R
 ##########################################
 
 inDirectory <- commandArgs()[5] 
 outDirectory <- commandArgs()[6]  
-#inDirectory <- "/home/pawel/Projects/ror-workspace/robust-ordinal-regresion/tests/in2" 
-#outDirectory <-"/home/pawel/Projects/ror-workspace/robust-ordinal-regresion/tests/out2" 
+
 ##########################################
 # Set the working directory as the "in" directory
 ##########################################

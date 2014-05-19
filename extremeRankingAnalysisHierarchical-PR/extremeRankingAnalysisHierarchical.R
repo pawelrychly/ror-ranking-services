@@ -1,14 +1,13 @@
 ##########################################
 # Usage:
-# R --slave --vanilla --args "[inDirectory]" "[outDirectory]" < extremeRankingAnalysis.R
+# R --slave --vanilla --args "[inDirectory]" "[outDirectory]" < extremeRankingAnalysisHierarchical.R
 # Example: 
-# R --slave --vanilla --args "${PWD}/in" "${PWD}/out" < extremeRankingAnalysis.R
+# R --slave --vanilla --args "${PWD}/in" "${PWD}/out" < extremeRankingAnalysisHierarchical.R
 ##########################################
 
 inDirectory <- commandArgs()[5] 
 outDirectory <- commandArgs()[6]  
-#inDirectory <- "/home/pawel/Projects/ror-workspace/robust-ordinal-regresion/tests/in1" 
-#outDirectory <-"/home/pawel/Projects/ror-workspace/robust-ordinal-regresion/tests/out1" 
+
 ##########################################
 # Set the working directory as the "in" directory
 ##########################################
