@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xmcdaKappalab.xsl"?>
+<xmcda:XMCDA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:xmcda="http://www.decision-deck.org/2012/XMCDA-2.2.0" 
+	xsi:schemaLocation="http://www.decision-deck.org/2012/XMCDA-2.2.0 http://www.decision-deck.org/xmcda/_downloads/XMCDA-2.2.0.xsd"> 
+	<alternativesValues>
+		<alternativeValue>
+			<alternativeID>a04</alternativeID>
+			<value>
+				<interval>
+					<lowerBound><integer>3</integer></lowerBound>
+					<upperBound><integer>2</integer></upperBound>
+				</interval>
+			</value>
+			<value>
+				<label>0</label>
+			</value>
+		</alternativeValue>
+    </alternativesValues>
+    
+</xmcda:XMCDA>

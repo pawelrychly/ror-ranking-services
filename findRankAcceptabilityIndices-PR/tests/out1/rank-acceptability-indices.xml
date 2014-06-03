@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<xmcda:XMCDA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xmcda="http://www.decision-deck.org/2012/XMCDA-2.2.0" xsi:schemaLocation="http://www.decision-deck.org/2012/XMCDA-2.2.0 http://www.decision-deck.org/xmcda/_downloads/XMCDA-2.2.0.xsd">
+  <alternativesValues>
+    <alternativeValue>
+      <alternativeID>a01</alternativeID>
+      <values>
+        <value name="1">
+          <real>0</real>
+        </value>
+        <value name="2">
+          <real>0</real>
+        </value>
+        <value name="3">
+          <real>0</real>
+        </value>
+        <value name="4">
+          <real>0</real>
+        </value>
+        <value name="5">
+          <real>0</real>
+        </value>
+        <value name="6">
+          <real>100</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a02</alternativeID>
+      <values>
+        <value name="1">
+          <real>0</real>
+        </value>
+        <value name="2">
+          <real>0</real>
+        </value>
+        <value name="3">
+          <real>0</real>
+        </value>
+        <value name="4">
+          <real>0</real>
+        </value>
+        <value name="5">
+          <real>100</real>
+        </value>
+        <value name="6">
+          <real>0</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a03</alternativeID>
+      <values>
+        <value name="1">
+          <real>0</real>
+        </value>
+        <value name="2">
+          <real>100</real>
+        </value>
+        <value name="3">
+          <real>0</real>
+        </value>
+        <value name="4">
+          <real>0</real>
+        </value>
+        <value name="5">
+          <real>0</real>
+        </value>
+        <value name="6">
+          <real>0</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a04</alternativeID>
+      <values>
+        <value name="1">
+          <real>0</real>
+        </value>
+        <value name="2">
+          <real>0</real>
+        </value>
+        <value name="3">
+          <real>100</real>
+        </value>
+        <value name="4">
+          <real>0</real>
+        </value>
+        <value name="5">
+          <real>0</real>
+        </value>
+        <value name="6">
+          <real>0</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a05</alternativeID>
+      <values>
+        <value name="1">
+          <real>0</real>
+        </value>
+        <value name="2">
+          <real>0</real>
+        </value>
+        <value name="3">
+          <real>0</real>
+        </value>
+        <value name="4">
+          <real>100</real>
+        </value>
+        <value name="5">
+          <real>0</real>
+        </value>
+        <value name="6">
+          <real>0</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a06</alternativeID>
+      <values>
+        <value name="1">
+          <real>100</real>
+        </value>
+        <value name="2">
+          <real>0</real>
+        </value>
+        <value name="3">
+          <real>0</real>
+        </value>
+        <value name="4">
+          <real>0</real>
+        </value>
+        <value name="5">
+          <real>0</real>
+        </value>
+        <value name="6">
+          <real>0</real>
+        </value>
+      </values>
+    </alternativeValue>
+  </alternativesValues>
+</xmcda:XMCDA>

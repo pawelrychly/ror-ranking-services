@@ -1,0 +1,17 @@
+In order to run this services a glpk solver is required http://www.gnu.org/software/glpk/
+
+Installation of dependencies.
+a) rJava package: install.packages("rJava")
+b) ROI: install.packages("ROI")
+c) ROI.plugin.glpk package: install.packages("ROI.plugin.glpk")
+d) RXMCDA package: install.packages("RXMCDA")
+e) rorranking package.
+	In order to install this package you can download a builded tar.gz file, from: 
+		https://github.com/pawelrychly/ror-ranking-services/blob/master/rorranking_1.0.tar.gz
+	You can also download a source code from:
+		https://github.com/pawelrychly/rorranking 
+	and build it using a command: 
+	R CMD build name-of-folder
+	Then it is necessary to install it using R code: 
+		install.packages("directory/to/builded/package")
+3. Examples of running code of services are given in tests/launch.test files.

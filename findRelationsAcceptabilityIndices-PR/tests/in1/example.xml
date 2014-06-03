@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xmcdaKappalab.xsl"?>
+<xmcda:XMCDA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:xmcda="http://www.decision-deck.org/2012/XMCDA-2.2.0" 
+	xsi:schemaLocation="http://www.decision-deck.org/2012/XMCDA-2.2.0 http://www.decision-deck.org/xmcda/_downloads/XMCDA-2.2.0.xsd"> 
+ 
+	<alternativesMatrix>
+		<row>
+			<alternativeID>a01</alternativeID>
+			<column>
+				<alternativeID>a01</alternativeID>
+				<value><real>90.1</real></value>
+			</column>
+			<column>
+				<alternativeID>a02</alternativeID>
+				<value><real>91</real></value>
+			</column>
+			<column>
+				<alternativeID>a03</alternativeID>
+				<value><real>12</real></value>
+			</column>
+		</row>
+		<row>
+			<alternativeID>a02</alternativeID>
+			<column>
+				<alternativeID>a01</alternativeID>
+				<value><real>1</real></value>
+			</column>
+			<column>
+				<alternativeID>a02</alternativeID>
+				<value><real>2.3</real></value>
+			</column>
+			<column>
+				<alternativeID>a03</alternativeID>
+				<value><real>4</real></value>
+			</column>
+		</row>
+	</alternativesMatrix>
+</xmcda:XMCDA> 
