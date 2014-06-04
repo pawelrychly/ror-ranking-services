@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <program_description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.decision-deck.org/ws/_downloads/description.xsd">
     <program provider="PR"
-        name="findPreferentionalReductsForNecessaryRelationsHierarchical"
-        displayName="findPreferentionalReductsForNecessaryRelationsHierarchical"
+        name="findRepresentativeValueFunctionHierarchical"
+        displayName="findRepresentativeValueFunctionHierarchical"
         version="1.0" />
     <documentation>
-        <description> Function finds all preferentional reducts for necessary relations. In this version of function, a hierarchical informations are considered.  </description>
+        <description> Finds representative value function for a given set of necessary relations. In this version of function, a hierarchical informations are considered.  </description>
         <contact>Pawel Rychly (pawelrychly@gmail.com).</contact>
     </documentation>
     
@@ -125,7 +125,7 @@
                 ]]>
             </xmcda>
         </input>
-        
+
         
         <input id="preferences" name="preferences" displayName="preferences"
             isoptional="1">
@@ -159,6 +159,80 @@
                     ]]>
             </xmcda>
         </input>
+
+        <input id="intensities-of-preferences" name="intensities-of-preferences" displayName="intensities-of-preferences"
+            isoptional="1">
+            
+            <documentation>
+                <description>
+                    Intensities of preference relations between pairs of alternatives. A values linked to pairs, determines an ids of nodes in hierarchy tree. If value is not given, or if it is equal 0, then all criteria are taken into account. 
+                </description>
+            </documentation>
+            <xmcda tag="alternativesComparisons">
+                <![CDATA[
+                    <alternativesComparisons>
+                        <comparisonType>
+                            %1<!-- type of preference: strong, weak, or indif -->
+                        </comparisonType>
+                        <pairs>
+                            <pair>
+                                <initial>
+                                    <alternativesSet>
+                                        <element>
+                                            <alternativeID>%2</alternativeID>
+                                        </element>
+                                        <element>
+                                            <alternativeID>%3</alternativeID>
+                                        </element>
+                                    </alternativesSet>
+                                </initial>
+                                <terminal>
+                                    <alternativesSet>
+                                        <element>
+                                            <alternativeID>%4</alternativeID>
+                                        </element>
+                                        <element>
+                                            <alternativeID>%5</alternativeID>
+                                        </element>
+                                    </alternativesSet>
+                                </terminal>
+                                <value>
+                                    <label>%6</label>
+                                </value>
+                            </pair>
+                        </pairs>
+                    </alternativesComparisons> 
+                    ]]>
+            </xmcda>
+        </input>
+
+        <input id="rank-related-requirements" name="rank-related-requirements" displayName="rank-related-requirements"
+            isoptional="1">
+            
+            <documentation>
+                <description>
+                    Set of rank related requirements. A label value linked to an alternative, determines an ids of nodes in hierarchy tree. If value is not given, or if it is equal 0, then all criteria are taken into account. 
+                </description>
+            </documentation>
+            <xmcda tag="alternativesValues">
+                <![CDATA[
+                    <alternativesValues>
+                        <alternativeValue>
+                            <alternativeID>%1</alternativeID>
+                            <value>
+                                <interval>
+                                    <lowerBound><integer>%2</integer></lowerBound>
+                                    <upperBound><integer>%3</integer></upperBound>
+                                </interval>
+                            </value>
+                            <value>
+                                <label>%4</label>
+                            </value>
+                        </alternativeValue>
+                    </alternativesValues>
+                    ]]>
+            </xmcda>
+        </input>
 		
 		<input id="characteristic-points" name="characteristic-points" displayName="characteristic points"
             isoptional="1">
@@ -188,23 +262,29 @@
             
             <documentation>
                 <description>
-					Single boolean value. Determines whether to use sctrictly increasing (1) or monotonously increasing (other number)
-value functions
-				</description>
+                    Method parameters
+                    strict %1 - determines does a strictly monotonic functions are used.
+                    compromise %2 - boolean value. Determines does compromise method is used
+                </description>
             </documentation>
             <xmcda tag="methodParameters">
                 <![CDATA[
                      <methodParameters>
-						<parameter name="strict">
+                        <parameter name="strict">
                             <value>
                                 <boolean>%1 <!-- true/false--></boolean>
                             </value>
                         </parameter>
-					</methodParameters>
+                        <parameter name="compromise">
+                            <value>
+                                <boolean>%2</boolean>
+                            </value>
+                        </parameter>
+                    </methodParameters>
                     ]]>
             </xmcda>
         </input>
-		
+        
 		
         <output id="messages"
             name="messages"
@@ -216,32 +296,30 @@ value functions
             <xmcda tag="methodMessages"/>
         </output>
         
-        <output id="reducts-by-necessary-relations-hierarchical"
-            name="reducts-by-necessary-relations-hierarchical"
-            displayName="reducts by necessary relations hierarchical">
+        <output id="representative-value-function-hierarchical"
+            name="representative-value-function-hierarchical"
+            displayName="representative value function hierarchical">
             
             <documentation>
-                <description>List of necessary relations. Reducts are described as a label values assigned to relations.</description>
+                <description>A list of points for each criterion. Each criteria tag describe a node of hierarchy tree marked in id attribute </description>
             </documentation>
-            <xmcda tag="alternativesComparisons">
+            <xmcda tag="criteria">
                 <![CDATA[
-                    <alternativesComparisons id="%1">
-                        <pairs>
-                          <pair>
-                            <initial>
-                              <alternativeID>%1</alternativeID>
-                            </initial>
-                            <terminal>
-                              <alternativeID>%2</alternativeID>
-                            </terminal>
-                            <values>
-                                <value><label>%3</label></value>
-                                [...]
-                            </values>
-                          </pair>
-                          [...]
-                      </pairs>
-                    </alternativesComparisons>
+                    <criteria id="%1">
+                        <criterion id="%2">
+                            <criterionFunction>
+                                <points>
+                                    <point>
+                                        <abscissa><real>[...]</real></abscissa>
+                                        <ordinate><real>[...]</real></ordinate>
+                                    </point>
+                                    [...]
+                                </points>
+                            </criterionFunction>
+                        </criterion>
+                        [...]
+                    </criteria>
+                    [...]
                     ]]>
             </xmcda>
         </output>

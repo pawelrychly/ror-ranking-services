@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <program_description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.decision-deck.org/ws/_downloads/description.xsd">
     <program provider="PR"
-        name="extremeRankingAnalysisHierarchical"
-        displayName="extremeRankingAnalysisHierarchical"
+        name="findRankAcceptabilityIndicesHierarchical"
+        displayName="findRankAcceptabilityIndicesHierarchical"
         version="1.0" />
     <documentation>
         <description> Finds rank acceptability indices matrix for a given problem. In this version of function, a hierarchical informations are considered.  </description>
@@ -283,7 +283,7 @@
                         <alternativeValue>
                             <alternativeID>[...]</alternativeID>
                             <values>
-                                <value name='1'><real>[...]</real></name>
+                                <value name='1'><real>[...]</real></value>
                                 [...]
                             </values>
                          </alternativeValue>

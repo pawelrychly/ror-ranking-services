@@ -1,0 +1,1 @@
+R --slave --vanilla --args "${PWD}/in12" "${PWD}/out12" < ../findNecessaryAndPossiblePreferenceRelations.R
