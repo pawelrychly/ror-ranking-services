@@ -83,7 +83,7 @@
             <documentation>
                 <description>Description of hierarchical structure of criteria. Each node of hierarchy, should have an unique id attribute. Leaves of a tree, should contain a set of criteria. </description>
             </documentation>
-            <xmcda tag="hierarhchy">
+            <xmcda tag="hierarchy">
                 <![CDATA[
                     <hierarchy>
                         <node id="nodes">
