@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <program_description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.decision-deck.org/ws/_downloads/description.xsd">
     <program provider="PR"
-        name="findRankAcceptabilityIndices"
-        displayName="findRankAcceptabilityIndices"
+        name="findRelationsAcceptabilityIndices"
+        displayName="findRelationsAcceptabilityIndices"
         version="1.0" />
     <documentation>
         <description>Finds relations acceptability indices matrix for a given problem</description>
