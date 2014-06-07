@@ -250,6 +250,44 @@
 					</methodParameters>
                     ]]>
             </xmcda>
+            <gui status="preferFile">
+                <entry id="%1" type="boolean" displayName="strictly monotonic functions">
+                    <documentation>
+                        <description>
+                            This parameter defines does utility functions should be strictly monotonic.
+                        </description>
+                    </documentation>
+                    <items>
+                        <item id="true">
+                            <description>Yes</description>
+                            <value>true</value>
+                        </item>
+                        <item id="false">
+                            <description>No</description>
+                            <value>false</value>
+                        </item>
+                    </items>
+                    <defaultValue>false</defaultValue>
+                </entry>
+                <entry id="%2" type="boolean" displayName="compromise method">
+                    <documentation>
+                        <description>
+                            This parameter defines does a compromise method is used.
+                        </description>
+                    </documentation>
+                    <items>
+                        <item id="true">
+                            <description>Yes</description>
+                            <value>true</value>
+                        </item>
+                        <item id="false">
+                            <description>No</description>
+                            <value>false</value>
+                        </item>
+                    </items>
+                    <defaultValue>false</defaultValue>
+                </entry>
+            </gui>
         </input>
 		
         
