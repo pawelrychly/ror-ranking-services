@@ -210,6 +210,16 @@ if (execFlag) {
              parent=tree)
   putAlternativeValue(tree, result$result, target.variant.a, mcdaConcept=NULL)
   saveXML(tree, file=result.file)
+
+  outTreeMessage = newXMLDoc()
+  newXMLNode("xmcda:XMCDA", 
+      attrs=c("xsi:schemaLocation" = "http://www.decision-deck.org/2009/XMCDA-2.0.0 http://www.decision-deck.org/xmcda/_downloads/XMCDA-2.0.0.xsd"),
+      suppressNamespaceWarning=TRUE, 
+      namespace = c("xsi" = "http://www.w3.org/2001/XMLSchema-instance", "xmcda" = "http://www.decision-deck.org/2009/XMCDA-2.0.0"), 
+      parent=outTreeMessage)
+
+  status<-putLogMessage(outTreeMessage, "OK", name = "executionStatus")
+  status<-saveXML(outTreeMessage, file=result.file.messages)
 }
 
 if (!is.null(errCalc)){

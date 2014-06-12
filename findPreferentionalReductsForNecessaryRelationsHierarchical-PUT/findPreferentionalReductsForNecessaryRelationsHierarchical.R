@@ -155,6 +155,16 @@ if (execFlag) {
     rorranking:::putAlternativesComparisonsWithReductsData(outTreeReducts, relations, reducts.by.relations, attributes=c("id"=nodeid))
   }
   saveXML(outTreeReducts, file=reducts.filename)
+
+  outTreeMessage = newXMLDoc()
+  newXMLNode("xmcda:XMCDA", 
+      attrs=c("xsi:schemaLocation" = "http://www.decision-deck.org/2009/XMCDA-2.0.0 http://www.decision-deck.org/xmcda/_downloads/XMCDA-2.0.0.xsd"),
+      suppressNamespaceWarning=TRUE, 
+      namespace = c("xsi" = "http://www.w3.org/2001/XMLSchema-instance", "xmcda" = "http://www.decision-deck.org/2009/XMCDA-2.0.0"), 
+      parent=outTreeMessage)
+
+  status<-putLogMessage(outTreeMessage, "OK", name = "executionStatus")
+  status<-saveXML(outTreeMessage, file=result.file.messages)
 }
 
 if (!is.null(errCalc)){
