@@ -246,9 +246,9 @@ value functions
         </input>
 		
         
-        <output id="reducts-by-necessary-relations-hierarchical"
-            name="reducts-by-necessary-relations-hierarchical"
-            displayName="reducts by necessary relations hierarchical">
+        <output id="reducts-by-alternatives-hierarchical"
+            name="reducts-by-alternatives-hierarchical"
+            displayName="reducts by alternatives hierarchical">
             
             <documentation>
                 <description>List of alternatives. Reducts are described as a label values assigned to alternative. Nodes of hieararchy tree are separated by an alternativesValues tags. </description>

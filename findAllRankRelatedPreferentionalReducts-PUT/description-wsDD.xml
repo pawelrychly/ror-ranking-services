@@ -220,9 +220,9 @@ value functions
         </input>
 		
         
-        <output id="reducts-by-necessary-relations"
-            name="reducts-by-necessary-relations"
-            displayName="reducts by necessary relations">
+        <output id="reducts-by-alternatives"
+            name="reducts-by-alternatives"
+            displayName="reducts by alternatives">
             
             <documentation>
                 <description>List of alternatives. Reducts are described as a label values assigned to alternative.</description>
