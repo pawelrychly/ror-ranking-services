@@ -275,7 +275,7 @@
             ]]>
             </xmcda>
             <gui status="preferFile">
-                <entry id="%1" type="boolean" displayName="strictly monotonic functions">
+                <entry id="%1" type="enum" displayName="strictly monotonic functions">
                     <documentation>
                         <description>
                             This parameter defines does utility functions should be strictly monotonic.

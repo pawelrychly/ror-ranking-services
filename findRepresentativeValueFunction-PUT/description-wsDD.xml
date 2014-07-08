@@ -239,7 +239,7 @@
                      <methodParameters>
 						<parameter name="strict">
                             <value>
-                                <boolean>%1 <!-- true/false--></boolean>
+                                <boolean>%1</boolean>
                             </value>
                         </parameter>
                         <parameter name="compromise">
@@ -251,7 +251,7 @@
                     ]]>
             </xmcda>
             <gui status="preferFile">
-                <entry id="%1" type="boolean" displayName="strictly monotonic functions">
+                <entry id="%1" type="enum" displayName="strictly monotonic functions">
                     <documentation>
                         <description>
                             This parameter defines does utility functions should be strictly monotonic.
@@ -269,7 +269,7 @@
                     </items>
                     <defaultValue>false</defaultValue>
                 </entry>
-                <entry id="%2" type="boolean" displayName="compromise method">
+                <entry id="%2" type="enum" displayName="compromise method">
                     <documentation>
                         <description>
                             This parameter defines does a compromise method is used.
