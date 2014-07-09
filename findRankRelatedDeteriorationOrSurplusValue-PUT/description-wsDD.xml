@@ -234,15 +234,14 @@
             </xmcda>
         </input>
 		
-		<input id="parameters" name="parameters" displayName="parameters" isoptional="1">
+		<input id="parameters" name="parameters" displayName="parameters" isoptional="0">
             <documentation>
-                <description>
-                Method parameters
-                strict %1 - determines does a strictly monotonic functions are used.
-                type_of_result %2 - One of the two label values (deterioration or surplus-value)
-                precision %3 - real value defining expected precision
-                possible_or_necessary %4 - One of the two label values (possible or necessary). This parameter determines does target should be satisfied by one (possible) or all(necessary) value functions
-                </description>
+                <description>Method parameters
+strict %1 - determines does a strictly monotonic functions are used.
+type_of_result %2 - One of the two label values (deterioration or surplus-value)
+precision %3 - real value defining expected precision
+possible_or_necessary %4 - One of the two label values (possible or necessary). This parameter determines does target should be satisfied by one (possible) or all(necessary) value functions
+</description>
             </documentation>
             <xmcda tag="methodParameters">
             <![CDATA[
@@ -266,30 +265,16 @@
                 </methodParameters>
             ]]>
             </xmcda>
-            <gui status="preferFile">
-                <entry id="%1" type="enum" displayName="strictly monotonic functions">
+            <gui status="alwaysGUI">
+                <entry id="%1" type="boolean" displayName="strictly monotonic functions">
                     <documentation>
-                        <description>
-                            This parameter defines does utility functions should be strictly monotonic.
-                        </description>
+                        <description>This parameter defines does utility functions should be strictly monotonic.</description>
                     </documentation>
-                    <items>
-                        <item id="true">
-                            <description>Yes</description>
-                            <value>true</value>
-                        </item>
-                        <item id="false">
-                            <description>No</description>
-                            <value>false</value>
-                        </item>
-                    </items>
                     <defaultValue>false</defaultValue>
                 </entry>
                 <entry id="%2" type="enum" displayName="type of result">
                     <documentation>
-                        <description>
-                            Type of searched value (deterioration or surplus-value)
-                        </description>
+                        <description>Type of searched value (deterioration or surplus-value)</description>
                     </documentation>
                     <items>
                         <item id="deterioration">
@@ -317,9 +302,7 @@
                 </entry>
                 <entry id="%4" type="enum" displayName="possible or necessary">
                     <documentation>
-                        <description>
-                            One of the two label values (possible or necessary). This parameter determines does target should be satisfied by one (possible) or all(necessary) value functions
-                        </description>
+                        <description>One of the two label values (possible or necessary). This parameter determines does target should be satisfied by one (possible) or all(necessary) value functions</description>
                     </documentation>
                     <items>
                         <item id="possible">
