@@ -283,7 +283,7 @@
                 </entry>
                 <entry id="%2" type="enum" displayName="type of result">
                     <documentation>
-                        <description>Type of searched value (deterioration or surplus-value)</description>
+                        <description>Type of searched value</description>
                     </documentation>
                     <items>
                         <item id="deterioration">
@@ -299,7 +299,7 @@
                 </entry>
                 <entry id="%3" type="float" displayName="precision">
                     <constraint>
-                        <description>The value should be a strictly positive float.</description>
+                        <description>A float value between 0 and 1 (bounds excluded).</description>
                         <code>
                             <![CDATA[
                                ((%3 > 0) && (%3 < 1))
