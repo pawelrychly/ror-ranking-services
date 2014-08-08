@@ -5,7 +5,7 @@
         displayName="findPreferenceRelatedDeteriorationOrSurplusValueHierarchical"
         version="1.0" />
     <documentation>
-        <description>Function finds comprehensive (possible or necessary) deterioration or surplus utility value for a given variant and specified relation. In this version of function, a hierarchical informations are considered.</description>
+        <description>Depending on the need, for a given already fulfilled preference relation between two alternatives: "a is preferred to b", function finds a one of the two possible types of values. These are the maximal deterioration of the performance of the alternative a or the maximal surplus value of the comprehensive score of this alternative. In the first case, function finds a minimal value from the range of 0 to 1, that multiplied by the performances on chosen criteria allows to maintain a truth of mentioned preference relation. In the second case, it finds the maximal value that may be subtracted from the comprehensive score of this alternative in order to maintain a truth of this relation. In both cases it is possible to consider the truth of mentioned relation for both all or at least one compatible value funtion. Function supports a hierarchical decomposition of the problem.</description>
         <contact>Pawel Rychly (pawelrychly@gmail.com).</contact>
     </documentation>
     
@@ -15,62 +15,62 @@
             displayName="alternatives"
             isoptional="0">
             <documentation>
-                <description>List of alternatives data. </description>
+                <description>The list of all considered alternatives. The input value should be a valid XMCDA document whose main tag is alternatives. Each alternative may be described using a two attributes: id and name. While the first one denotes a machine readable name, the second represents a human readable name.</description>
             </documentation>
             <xmcda tag="alternatives">
                 <![CDATA[
                     <alternatives>
-						<alternative id="%1" name="%2" />
-						[...]
-					</alternatives>
+                        <alternative id="%1" name="%2" />
+                        [...]
+                    </alternatives>
                     ]]>
             </xmcda>
         </input>
-		
-		<input id="criteria"
+        
+        <input id="criteria"
             name="criteria"
             displayName="criteria"
             isoptional="0">
             <documentation>
-                <description>List of criteria data. </description>
+                <description>A list of all considered criteria. The input value should be a valid XMCDA document whose main tag is criteria. It is assumed that the preference direction should be set on max.</description>
             </documentation>
             <xmcda tag="criteria">
                 <![CDATA[
                     <criteria>
-						<criterion id="%1" name="%1">
-							<scale>
-								<quantitative>
-									<preferenceDirection>max <!-- only max value allowed --></preferenceDirection>
-								</quantitative>
-							</scale>
-						</criterion>
-						[...]
-					</criteria>
+                        <criterion id="%1" name="%1">
+                            <scale>
+                                <quantitative>
+                                    <preferenceDirection>max <!-- only max value allowed --></preferenceDirection>
+                                </quantitative>
+                            </scale>
+                        </criterion>
+                        [...]
+                    </criteria>
                     ]]>
             </xmcda>
         </input>
-		
+        
         <input id="performances"
             name="performances"
             displayName="performances"
             isoptional="0">
             <documentation>
-                <description>Description of alternatives performance - values on criteria. </description>
+                <description>Description of values on criteria for different alternatives. It is required to provide the IDs of both criteria and alternatives described previously. The input value should be provided as a valid XMCDA document whose main tag is performanceTable.</description>
             </documentation>
             <xmcda tag="performanceTable">
                 <![CDATA[
                     <performanceTable>
                         <alternativePerformances> 
-						    <alternativeID>%1</alternativeID>
-							<performance>
-								<criterionID>%2</criterionID>
-								<value>
-									<real>%3</real>
-								</value>
-							</performance>
-							[...]
+                            <alternativeID>%1</alternativeID>
+                            <performance>
+                                <criterionID>%2</criterionID>
+                                <value>
+                                    <real>%3</real>
+                                </value>
+                            </performance>
+                            [...]
                         </alternativePerformances>
-						[...]
+                        [...]
                     </performanceTable>
                     ]]>
             </xmcda>
@@ -81,7 +81,7 @@
             displayName="target"
             isoptional="0">
             <documentation>
-                <description>Description of target to achive. Alternative with id %1 should be preffered to alternative %2. </description>
+                <description>Description of the target to achieve which has a form of the weak preference relation. The input value should be provided as a valid XMCDA document whose main tag is alternativesComparisons. It should contain only a one pair of alternative ids that denotes the weak preference relation between two alternatives. It may be interpreted as "The first alternative should be weakly preffered to the second one." </description>
             </documentation>
             <xmcda tag="alternativesComparisons">
                 <![CDATA[
@@ -106,7 +106,7 @@
             displayName="hierarchy of criteria"
             isoptional="0">
             <documentation>
-                <description>Description of hierarchical structure of criteria. Each node of hierarchy, should have an unique id attribute. Leaves of a tree, should contain a set of criteria. </description>
+                <description>Description of the hierarchical structure of criteria. Each node of this hierarchy, need to have an unique id attribute. The most nested nodes, should contain a set of criteria. The input value should be provided as a valid XMCDA document whose main tag is hierarchy</description>
             </documentation>
             <xmcda tag="hierarchy">
                 <![CDATA[
@@ -129,8 +129,7 @@
             isoptional="1">
             
             <documentation>
-                <description>
-                    Set of preference relations between alternatives. A values linked to pairs, determines an ids of nodes in hierarchy tree. If value is not given, or if it is equal 0, then all criteria are taken into account.   
+                <description>Set of pairwise comparisons of alternatives that constitutes the form of the preference information. For a pair of alternatives three types of comparisons are supported. These are the strict preference, weak preference and indifference. Values linked to pairs, determines an ids of nodes in the hierarchy of criteria tree. If value is not given or if it is equal 0 requirement applies for the whole set of criteria, otherwise the preference relation applies only for a particular node. The input value should be provided as a valid XMCDA document whose main tag is alternativesComparisons. For each type of comparison, a separate alternativesComparisons tag should be used. Within these groups a mentioned types are denoted using a comparisonType tag by respectively strict, weak and indif label. Comparisons should be provided as a pairs of alternatives ids.    
                 </description>
             </documentation>
             <xmcda tag="alternativesComparisons">
@@ -162,9 +161,7 @@
             isoptional="1">
             
             <documentation>
-                <description>
-                    Intensities of preference relations between pairs of alternatives. A values linked to pairs, determines an ids of nodes in hierarchy tree. If value is not given, or if it is equal 0, then all criteria are taken into account. 
-                </description>
+                <description>Set of comparisons of intensities of preference relations that constitutes the form of the preference information. For a pair of preference relations three types of comparisons are supported. These are the strict preference, weak preference and indifference. Values linked to pairs, determines an ids of nodes in the hierarchy of criteria tree. If value is not given or if it is equal 0 requirement applies for the whole set of criteria, otherwise the preference relation applies only for a particular node. The input value should be provided as a valid XMCDA document whose main tag is alternativesComparisons. For each type of comparison, a separate alternativesComparisons tag should be used. Within these groups a mentioned types are denoted using a comparisonType tag by respectively strict, weak and indif label. Comparisons should be provided as a pairs of two elementary sets of alternatives ids. The following form is expected:</description>
             </documentation>
             <xmcda tag="alternativesComparisons">
                 <![CDATA[
@@ -208,9 +205,7 @@
             isoptional="1">
             
             <documentation>
-                <description>
-                    Set of rank related requirements. A label value linked to an alternative, determines an ids of nodes in hierarchy tree. If value is not given, or if it is equal 0, then all criteria are taken into account. 
-                </description>
+                <description>Set of rank-related requirements that constitutes the form of the preference information. In other words it is a set of  ranges of possible positions in the final ranking for a chosen alternatives. The label values linked to the alternatives, determines an ids of nodes in the hierarchy of criteria tree. If value is not given or if it is equal 0 requirement applies for the whole set of criteria, otherwise the preference relation applies only for a particular node. The input value should be provided as a valid XMCDA document whose main tag is alternativesValues. Each requirement should contain both an id of chosen alternative and pair of values that denotes the desired range. These informations should be provided within a separate alternativesValue tag.</description>
             </documentation>
             <xmcda tag="alternativesValues">
                 <![CDATA[
@@ -231,26 +226,24 @@
                     ]]>
             </xmcda>
         </input>
-		
-		<input id="characteristic-points" name="characteristic-points" displayName="characteristic points"
+        
+        <input id="characteristic-points" name="characteristic-points" displayName="characteristic points"
             isoptional="1">
             
             <documentation>
-                <description>
-					Numbers of characteristic points for criteria. If 0 or not given then characteristic points are not used.
-				</description>
+                <description>A set of values associated with the criteria. This input allows to determine what type of value function should be used for the particular criterion. For each criterion that has an associated greater than one value, a piecewise linear value function is used. In this case, the mentioned value denotes a number of characteristic points of this value function. For criteria that are not listed in this file, or which values are lower than two uses a general value function. The input value should be provided as a valid XMCDA document whose main tag is criteriaValues. Each element should contain both an id of the criterion, and value tag.</description>
             </documentation>
             <xmcda tag="criteriaValues">
                 <![CDATA[
                      <criteriaValues>
-						<criterionValue>
-							<criterionID>%1</criterionID>
-							<value>
-								<integer>%2</integer>
-							</value>
-						</criterionValue>
-						[...]
-					</criteriaValues>
+                        <criterionValue>
+                            <criterionID>%1</criterionID>
+                            <value>
+                                <integer>%2</integer>
+                            </value>
+                        </criterionValue>
+                        [...]
+                    </criteriaValues>
                     ]]>
             </xmcda>
         </input>
@@ -259,17 +252,13 @@
             isoptional="1">
             
             <documentation>
-                <description>
-                    A set of criteria ids, for which a modification will be searched. This parameter is used only if an improvement or deterioration of variants performance is searched.
-                </description>
+                <description>A set of ids of the criteria that should be taken into account for modification of the performances. This parameter is used only if the modification of performances is searched.</description>
             </documentation>
             <xmcda tag="criteriaSet">
                 <![CDATA[
                      <criteriaSet>
                         <element><criterionID>[...]</criterionID></element>
-                        <element><criterionID>[...]</criterionID></element>
-                        <element><criterionID>[...]</criterionID></element>
-                        <element><criterionID>[...]</criterionID></element>
+                        [...]
                     </criteriaSet>
                     ]]>
             </xmcda>
@@ -277,13 +266,11 @@
 		
 		<input id="parameters" name="parameters" displayName="parameters" isoptional="0">
             <documentation>
-                <description>
-                Method parameters
-                strict %1 - determines does a strictly monotonic functions are used.
-                type_of_result %2 - One of the two label values (deterioration or surplus-value)
-                precision %3 - real value defining expected precision
-                possible_or_necessary %4 - One of the two label values (possible or necessary). This parameter determines does target should be satisfied by one (possible) or all(necessary) value functions
-                </description>
+                <description>Method parameters
+                strict %1 - Single boolean value. Determines whether to use sctrictly increasing (true) or monotonously increasing (false) value functions.
+                type_of_result %2 - Determines whether analyse the modification of performances or comprehensive score. 
+                precision %3 - A float value between 0 and 1 (bounds excluded). It describes the precision of expected result.
+                possible_or_necessary %4 - One of the two label values (possible or necessary). This parameter determines does target should be satisfied by one (possible) or all(necessary) compatible value functions.</description>
             </documentation>
             <xmcda tag="methodParameters">
             <![CDATA[
@@ -308,15 +295,15 @@
             ]]>
             </xmcda>
             <gui status="alwaysGUI">
-                <entry id="%1" type="boolean" displayName="strictly monotonic functions">
+                <entry id="%1" type="boolean" displayName="Use strictly increasing value functions?">
                     <documentation>
-                        <description>This parameter defines does utility functions should be strictly monotonic.</description>
+                        <description>Single boolean value. Determines whether to use sctrictly increasing (true) or monotonously increasing (false) value functions.</description>
                     </documentation>
                     <defaultValue>false</defaultValue>
                 </entry>
                 <entry id="%2" type="enum" displayName="type of result">
                     <documentation>
-                        <description>Type of searched value (improvement or missing-value)</description>
+                        <description>Type of searched value</description>
                     </documentation>
                     <items>
                         <item id="deterioration">
@@ -330,9 +317,9 @@
                     </items>
                     <defaultValue>deterioration</defaultValue>
                 </entry>
-                <entry id="%3" type="float" displayName="precision">
+                <entry id="%3" type="float" displayName="precision of the result">
                     <constraint>
-                        <description>The value should be a strictly positive float.</description>
+                        <description>A float value between 0 and 1 (bounds excluded). It denotes the expected precision of the result.</description>
                         <code>
                             <![CDATA[
                                ((%3 > 0) && (%3 < 1))
@@ -342,7 +329,7 @@
                    
                     <defaultValue>0.005</defaultValue>
                 </entry>
-                <entry id="%4" type="enum" displayName="possible or necessary">
+                <entry id="%4" type="enum" displayName="Whether the target should be achieved possibly or necessarily?">
                     <documentation>
                         <description>One of the two label values (possible or necessary). This parameter determines does target should be satisfied by one (possible) or all(necessary) value functions</description>
                     </documentation>
@@ -366,7 +353,7 @@
             displayName="result">
             
             <documentation>
-                <description>Value of deterioration or surplus utility. ach alternatives values group describe a node of hierarchy tree marked in id attribute</description>
+                <description>A set of real values associated with the id of the considered alternative.  Depending on chosen option, these values may denotes the deteriorations of performances of the alternative or the surplus values of its comprehensive score. The output value should be provided as a valid XMCDA document whose main tag is alternativesValues. Each alternatives values group describes another node of the hierarchy tree. The id attributes denotes the ids of considered nodes.</description>
             </documentation>
             <xmcda tag="alternativesValues">
                 <![CDATA[
