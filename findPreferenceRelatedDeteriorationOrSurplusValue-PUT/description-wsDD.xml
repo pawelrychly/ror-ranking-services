@@ -81,7 +81,7 @@
             displayName="target"
             isoptional="0">
             <documentation>
-                <description>Description of the target to achieve which has a form of the weak preference relation. The input value should be provided as a valid XMCDA document whose main tag is alternativesComparisons. It should contain only a one pair of alternative ids that denotes the weak preference relation between two alternatives. It may be interpreted as "The first alternative should be weakly preffered to the second one." </description>
+                <description>Description of the target to achieve which has a form of the weak preference relation. The input value should be provided as a valid XMCDA document whose main tag is alternativesComparisons. It should contain only a one pair of alternative ids that denotes the weak preference relation between two alternatives. It may be interpreted as "The first alternative should be weakly preffered to the second one. </description>
             </documentation>
             <xmcda tag="alternativesComparisons">
                 <![CDATA[

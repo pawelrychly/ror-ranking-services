@@ -5,7 +5,8 @@
         displayName="findPreferentionalReductsForNecessaryRelations"
         version="1.0" />
     <documentation>
-        <description>Finds all preferentional reducts for necessary relations.</description>
+        <description>Finds all preferential reducts for necessary relations. In other words, for each necessary weak preference relation function finds all minimal sets of pairwise comparisons that imply this relation.
+        </description>
         <contact>Pawel Rychly (pawelrychly@gmail.com).</contact>
     </documentation>
     
@@ -16,14 +17,14 @@
             displayName="alternatives"
             isoptional="0">
             <documentation>
-                <description>List of alternatives data. </description>
+                <description>The list of all considered alternatives. The input value should be a valid XMCDA document whose main tag is alternatives. Each alternative may be described using a two attributes: id and name. While the first one denotes a machine readable name, the second represents a human readable name.</description>
             </documentation>
             <xmcda tag="alternatives">
                 <![CDATA[
                     <alternatives>
-						<alternative id="%1" name="%2" />
-						[...]
-					</alternatives>
+                        <alternative id="%1" name="%2" />
+                        [...]
+                    </alternatives>
                     ]]>
             </xmcda>
         </input>
@@ -33,20 +34,20 @@
             displayName="criteria"
             isoptional="0">
             <documentation>
-                <description>List of criteria data. </description>
+                <description>A list of all considered criteria. The input value should be a valid XMCDA document whose main tag is criteria. It is assumed that the preference direction should be set on max.</description>
             </documentation>
             <xmcda tag="criteria">
                 <![CDATA[
                     <criteria>
-						<criterion id="%1" name="%1">
-							<scale>
-								<quantitative>
-									<preferenceDirection>max <!-- only max value allowed --></preferenceDirection>
-								</quantitative>
-							</scale>
-						</criterion>
-						[...]
-					</criteria>
+                        <criterion id="%1" name="%1">
+                            <scale>
+                                <quantitative>
+                                    <preferenceDirection>max</preferenceDirection>
+                                </quantitative>
+                            </scale>
+                        </criterion>
+                        [...]
+                    </criteria>
                     ]]>
             </xmcda>
         </input>
@@ -82,7 +83,7 @@
             displayName="necessary-relations"
             isoptional="0">
             <documentation>
-                <description>List of all necessary relations for this problem </description>
+                <description> A list of all necessary weak preference relations on the set of alternatives. The returned value is a XMCDA document whose main tag is alternativesComparisons. Each relation is denoted as a pair of alternativesID </description>
             </documentation>
             <xmcda tag="alternativesComparisons">
                 <![CDATA[
@@ -106,11 +107,8 @@
         
         <input id="preferences" name="preferences" displayName="preferences"
             isoptional="1">
-            
             <documentation>
-                <description>
-					Set of preference relations between alternatives 
-				</description>
+                <description>Set of pairwise comparisons of alternatives that constitutes the form of the preference information. For a pair of alternatives three types of comparisons are supported. These are the strict preference, weak preference and indifference. The input value should be provided as a valid XMCDA document whose main tag is alternativesComparisons. For each type of comparison, a separate alternativesComparisons tag should be used. Within these groups a mentioned types are denoted using a comparisonType tag by respectively strict, weak and indif label. Comparisons should be provided as a pairs of alternatives ids.</description>
             </documentation>
             <xmcda tag="alternativesComparisons">
                 <![CDATA[
@@ -120,16 +118,17 @@
                         </comparisonType>
                         <pairs>
                             <pair>
-								<initial>
-									<alternativeID>%2</alternativeID>
-								</initial>
-								<terminal>
-									<alternativeID>%3</alternativeID>
-								</terminal>
-							</pair>
+                                <initial>
+                                    <alternativeID>%2</alternativeID>
+                                </initial>
+                                <terminal>
+                                    <alternativeID>%3</alternativeID>
+                                </terminal>
+                            </pair>
                             [...]
                         </pairs>
                     </alternativesComparisons>
+                    [...]
                     ]]>
             </xmcda>
         </input>
@@ -139,47 +138,41 @@
             isoptional="1">
             
             <documentation>
-                <description>
-					Numbers of characteristic points for criteria. If 0 or not given then characteristic points are not used.
-				</description>
+                <description>A set of values associated with the criteria. This input allows to determine what type of value function should be used for the particular criterion. For each criterion that has an associated greater than one value, a piecewise linear value function is used. In this case, the mentioned value denotes a number of characteristic points of this value function. For criteria that are not listed in this file, or which values are lower than two uses a general value function. The input value should be provided as a valid XMCDA document whose main tag is criteriaValues. Each element should contain both an id of the criterion, and value tag.</description>
             </documentation>
             <xmcda tag="criteriaValues">
                 <![CDATA[
                      <criteriaValues>
-						<criterionValue>
-							<criterionID>%1</criterionID>
-							<value>
-								<integer>%2</integer>
-							</value>
-						</criterionValue>
-						[...]
-					</criteriaValues>
+                        <criterionValue>
+                            <criterionID>%1</criterionID>
+                            <value>
+                                <integer>%2</integer>
+                            </value>
+                        </criterionValue>
+                        [...]
+                    </criteriaValues>
                     ]]>
             </xmcda>
         </input>
 		
 		<input id="parameters" name="parameters" displayName="parameters"
             isoptional="0">
-            
             <documentation>
-                <description>Single boolean value. Determines whether to use sctrictly increasing (1) or monotonously increasing (other number) value functions</description>
+                <description>Single boolean value. Determines whether to use sctrictly increasing (true) or monotonously increasing (false) value functions</description>
             </documentation>
             <xmcda tag="methodParameters">
                 <![CDATA[
                      <methodParameters>
-						<parameter name="strict">
+                        <parameter name="strict">
                             <value>
                                 <boolean>%1</boolean>
                             </value>
                         </parameter>
-					</methodParameters>
+                    </methodParameters>
                     ]]>
             </xmcda>
             <gui status="alwaysGUI">
-                <entry id="%1" type="boolean" displayName="strictly monotonic functions">
-                    <documentation>
-                        <description>This parameter defines does utility functions should be strictly monotonic.</description>
-                    </documentation>
+                <entry id="%1" type="boolean" displayName="Use strictly increasing value functions?">
                     <defaultValue>false</defaultValue>
                 </entry>
             </gui>
@@ -190,7 +183,7 @@
             displayName="reducts by necessary relations">
             
             <documentation>
-                <description>List of necessary relations. Reducts are described as a label values assigned to relations.</description>
+                <description>A List of all necessary relations and associated with them preferential reducts. The returned value is a valid XMCDA document whose main tag is the alternativesComparisons. Each element of this data, contains a pair of alternatives ids that denotes the necessary relation. Each necessary relation has an associated a set of string values that describes a different possible minimal sets of pairwise comparisons. Each of these values is a comma separated list of relations. Each comparison is described as a pair of ids separated by one of the three possible labels: strong, weak and indif. These abbreviations denotes respectively a strong preference, weak preference or indifference between mentioned alternatives.</description>
             </documentation>
             <xmcda tag="alternativesComparisons">
                 <![CDATA[

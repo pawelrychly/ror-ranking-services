@@ -81,7 +81,7 @@
         <input id="preferences" name="preferences" displayName="preferences"
             isoptional="1">
             <documentation>
-                <description>Set of pairwise comparisons of alternatives that constitutes the form of the preference information. For a pair of alternatives three types of comparisons are supported. These are the strict preference, weak preference and indifference. The input value should be provided as a valid XMCDA document whose main tag is alternativesComparisons. For each type of comparison, a separate alternativesComparisons tag should be used. Within these groups a mentioned types are denoted using a comparisonType tag by respectively strict, weak and indif label. Comparisons should be provided as a pairs of alternatives ids.</description>
+                <description>A set of pairwise comparisons of alternatives that constitutes the form of the preference information. For a pair of alternatives three types of comparisons are supported. These are the strict preference, weak preference and indifference. The input value should be provided as a valid XMCDA document whose main tag is alternativesComparisons. For each type of comparison, a separate alternativesComparisons tag should be used. Within these groups a mentioned types are denoted using a comparisonType tag by respectively strict, weak and indif label. Comparisons should be provided as a pairs of alternatives ids.</description>
             </documentation>
             <xmcda tag="alternativesComparisons">
                 <![CDATA[
