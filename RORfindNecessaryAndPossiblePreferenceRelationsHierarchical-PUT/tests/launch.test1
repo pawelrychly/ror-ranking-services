@@ -1,0 +1,1 @@
+R --slave --vanilla --args "${PWD}/in1" "${PWD}/out1" < ../RORfindNecessaryAndPossiblePreferenceRelationsHierarchical.R

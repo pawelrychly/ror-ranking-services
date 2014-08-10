@@ -1,0 +1,1 @@
+R --slave --vanilla --args "${PWD}/in6" "${PWD}/out6" < ../RORfindPreferenceRelatedDeteriorationOrSurplusValueHierarchical.R
