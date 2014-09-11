@@ -1,1 +1,0 @@
-R --slave --vanilla --args "${PWD}/in2" "${PWD}/out2" < ../RORfindNecessaryAndPossiblePreferenceRelations.R

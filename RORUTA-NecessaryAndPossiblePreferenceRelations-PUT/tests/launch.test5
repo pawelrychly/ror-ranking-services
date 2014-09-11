@@ -1,0 +1,1 @@
+R --slave --vanilla --args "${PWD}/in5" "${PWD}/out5" < ../RORUTA-NecessaryAndPossiblePreferenceRelations.R
