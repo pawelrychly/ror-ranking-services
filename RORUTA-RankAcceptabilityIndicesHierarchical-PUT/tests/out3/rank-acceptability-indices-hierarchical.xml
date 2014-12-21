@@ -1,0 +1,703 @@
+<?xml version="1.0"?>
+<xmcda:XMCDA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xmcda="http://www.decision-deck.org/2012/XMCDA-2.2.0" xsi:schemaLocation="http://www.decision-deck.org/2012/XMCDA-2.2.0 http://www.decision-deck.org/xmcda/_downloads/XMCDA-2.2.0.xsd">
+  <alternativesValues id="nodes11">
+    <alternativeValue>
+      <alternativeID>a01</alternativeID>
+      <values>
+        <value name="1">
+          <real>100</real>
+        </value>
+        <value name="2">
+          <real>0</real>
+        </value>
+        <value name="3">
+          <real>0</real>
+        </value>
+        <value name="4">
+          <real>0</real>
+        </value>
+        <value name="5">
+          <real>0</real>
+        </value>
+        <value name="6">
+          <real>0</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a02</alternativeID>
+      <values>
+        <value name="1">
+          <real>0</real>
+        </value>
+        <value name="2">
+          <real>0</real>
+        </value>
+        <value name="3">
+          <real>100</real>
+        </value>
+        <value name="4">
+          <real>0</real>
+        </value>
+        <value name="5">
+          <real>0</real>
+        </value>
+        <value name="6">
+          <real>0</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a03</alternativeID>
+      <values>
+        <value name="1">
+          <real>0</real>
+        </value>
+        <value name="2">
+          <real>0</real>
+        </value>
+        <value name="3">
+          <real>0</real>
+        </value>
+        <value name="4">
+          <real>100</real>
+        </value>
+        <value name="5">
+          <real>0</real>
+        </value>
+        <value name="6">
+          <real>0</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a04</alternativeID>
+      <values>
+        <value name="1">
+          <real>0</real>
+        </value>
+        <value name="2">
+          <real>0</real>
+        </value>
+        <value name="3">
+          <real>0</real>
+        </value>
+        <value name="4">
+          <real>100</real>
+        </value>
+        <value name="5">
+          <real>0</real>
+        </value>
+        <value name="6">
+          <real>0</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a05</alternativeID>
+      <values>
+        <value name="1">
+          <real>100</real>
+        </value>
+        <value name="2">
+          <real>0</real>
+        </value>
+        <value name="3">
+          <real>0</real>
+        </value>
+        <value name="4">
+          <real>0</real>
+        </value>
+        <value name="5">
+          <real>0</real>
+        </value>
+        <value name="6">
+          <real>0</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a06</alternativeID>
+      <values>
+        <value name="1">
+          <real>0</real>
+        </value>
+        <value name="2">
+          <real>0</real>
+        </value>
+        <value name="3">
+          <real>0</real>
+        </value>
+        <value name="4">
+          <real>0</real>
+        </value>
+        <value name="5">
+          <real>0</real>
+        </value>
+        <value name="6">
+          <real>100</real>
+        </value>
+      </values>
+    </alternativeValue>
+  </alternativesValues>
+  <alternativesValues id="nodes12">
+    <alternativeValue>
+      <alternativeID>a01</alternativeID>
+      <values>
+        <value name="1">
+          <real>100</real>
+        </value>
+        <value name="2">
+          <real>0</real>
+        </value>
+        <value name="3">
+          <real>0</real>
+        </value>
+        <value name="4">
+          <real>0</real>
+        </value>
+        <value name="5">
+          <real>0</real>
+        </value>
+        <value name="6">
+          <real>0</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a02</alternativeID>
+      <values>
+        <value name="1">
+          <real>0</real>
+        </value>
+        <value name="2">
+          <real>0</real>
+        </value>
+        <value name="3">
+          <real>0</real>
+        </value>
+        <value name="4">
+          <real>100</real>
+        </value>
+        <value name="5">
+          <real>0</real>
+        </value>
+        <value name="6">
+          <real>0</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a03</alternativeID>
+      <values>
+        <value name="1">
+          <real>0</real>
+        </value>
+        <value name="2">
+          <real>0</real>
+        </value>
+        <value name="3">
+          <real>0</real>
+        </value>
+        <value name="4">
+          <real>0</real>
+        </value>
+        <value name="5">
+          <real>100</real>
+        </value>
+        <value name="6">
+          <real>0</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a04</alternativeID>
+      <values>
+        <value name="1">
+          <real>0</real>
+        </value>
+        <value name="2">
+          <real>100</real>
+        </value>
+        <value name="3">
+          <real>0</real>
+        </value>
+        <value name="4">
+          <real>0</real>
+        </value>
+        <value name="5">
+          <real>0</real>
+        </value>
+        <value name="6">
+          <real>0</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a05</alternativeID>
+      <values>
+        <value name="1">
+          <real>0</real>
+        </value>
+        <value name="2">
+          <real>100</real>
+        </value>
+        <value name="3">
+          <real>0</real>
+        </value>
+        <value name="4">
+          <real>0</real>
+        </value>
+        <value name="5">
+          <real>0</real>
+        </value>
+        <value name="6">
+          <real>0</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a06</alternativeID>
+      <values>
+        <value name="1">
+          <real>0</real>
+        </value>
+        <value name="2">
+          <real>0</real>
+        </value>
+        <value name="3">
+          <real>0</real>
+        </value>
+        <value name="4">
+          <real>0</real>
+        </value>
+        <value name="5">
+          <real>100</real>
+        </value>
+        <value name="6">
+          <real>0</real>
+        </value>
+      </values>
+    </alternativeValue>
+  </alternativesValues>
+  <alternativesValues id="nodes1">
+    <alternativeValue>
+      <alternativeID>a01</alternativeID>
+      <values>
+        <value name="1">
+          <real>100</real>
+        </value>
+        <value name="2">
+          <real>0</real>
+        </value>
+        <value name="3">
+          <real>0</real>
+        </value>
+        <value name="4">
+          <real>0</real>
+        </value>
+        <value name="5">
+          <real>0</real>
+        </value>
+        <value name="6">
+          <real>0</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a02</alternativeID>
+      <values>
+        <value name="1">
+          <real>0</real>
+        </value>
+        <value name="2">
+          <real>0</real>
+        </value>
+        <value name="3">
+          <real>0</real>
+        </value>
+        <value name="4">
+          <real>100</real>
+        </value>
+        <value name="5">
+          <real>0</real>
+        </value>
+        <value name="6">
+          <real>0</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a03</alternativeID>
+      <values>
+        <value name="1">
+          <real>0</real>
+        </value>
+        <value name="2">
+          <real>0</real>
+        </value>
+        <value name="3">
+          <real>0</real>
+        </value>
+        <value name="4">
+          <real>0</real>
+        </value>
+        <value name="5">
+          <real>100</real>
+        </value>
+        <value name="6">
+          <real>0</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a04</alternativeID>
+      <values>
+        <value name="1">
+          <real>0</real>
+        </value>
+        <value name="2">
+          <real>0</real>
+        </value>
+        <value name="3">
+          <real>100</real>
+        </value>
+        <value name="4">
+          <real>0</real>
+        </value>
+        <value name="5">
+          <real>0</real>
+        </value>
+        <value name="6">
+          <real>0</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a05</alternativeID>
+      <values>
+        <value name="1">
+          <real>0</real>
+        </value>
+        <value name="2">
+          <real>100</real>
+        </value>
+        <value name="3">
+          <real>0</real>
+        </value>
+        <value name="4">
+          <real>0</real>
+        </value>
+        <value name="5">
+          <real>0</real>
+        </value>
+        <value name="6">
+          <real>0</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a06</alternativeID>
+      <values>
+        <value name="1">
+          <real>0</real>
+        </value>
+        <value name="2">
+          <real>0</real>
+        </value>
+        <value name="3">
+          <real>0</real>
+        </value>
+        <value name="4">
+          <real>0</real>
+        </value>
+        <value name="5">
+          <real>0</real>
+        </value>
+        <value name="6">
+          <real>100</real>
+        </value>
+      </values>
+    </alternativeValue>
+  </alternativesValues>
+  <alternativesValues id="nodes2">
+    <alternativeValue>
+      <alternativeID>a01</alternativeID>
+      <values>
+        <value name="1">
+          <real>32</real>
+        </value>
+        <value name="2">
+          <real>18</real>
+        </value>
+        <value name="3">
+          <real>4</real>
+        </value>
+        <value name="4">
+          <real>2</real>
+        </value>
+        <value name="5">
+          <real>16</real>
+        </value>
+        <value name="6">
+          <real>28</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a02</alternativeID>
+      <values>
+        <value name="1">
+          <real>18</real>
+        </value>
+        <value name="2">
+          <real>26</real>
+        </value>
+        <value name="3">
+          <real>14</real>
+        </value>
+        <value name="4">
+          <real>4</real>
+        </value>
+        <value name="5">
+          <real>16</real>
+        </value>
+        <value name="6">
+          <real>22</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a03</alternativeID>
+      <values>
+        <value name="1">
+          <real>18</real>
+        </value>
+        <value name="2">
+          <real>28</real>
+        </value>
+        <value name="3">
+          <real>28</real>
+        </value>
+        <value name="4">
+          <real>26</real>
+        </value>
+        <value name="5">
+          <real>0</real>
+        </value>
+        <value name="6">
+          <real>0</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a04</alternativeID>
+      <values>
+        <value name="1">
+          <real>18</real>
+        </value>
+        <value name="2">
+          <real>28</real>
+        </value>
+        <value name="3">
+          <real>28</real>
+        </value>
+        <value name="4">
+          <real>26</real>
+        </value>
+        <value name="5">
+          <real>0</real>
+        </value>
+        <value name="6">
+          <real>0</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a05</alternativeID>
+      <values>
+        <value name="1">
+          <real>18</real>
+        </value>
+        <value name="2">
+          <real>28</real>
+        </value>
+        <value name="3">
+          <real>28</real>
+        </value>
+        <value name="4">
+          <real>26</real>
+        </value>
+        <value name="5">
+          <real>0</real>
+        </value>
+        <value name="6">
+          <real>0</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a06</alternativeID>
+      <values>
+        <value name="1">
+          <real>32</real>
+        </value>
+        <value name="2">
+          <real>10</real>
+        </value>
+        <value name="3">
+          <real>8</real>
+        </value>
+        <value name="4">
+          <real>12</real>
+        </value>
+        <value name="5">
+          <real>14</real>
+        </value>
+        <value name="6">
+          <real>24</real>
+        </value>
+      </values>
+    </alternativeValue>
+  </alternativesValues>
+  <alternativesValues id="nodes">
+    <alternativeValue>
+      <alternativeID>a01</alternativeID>
+      <values>
+        <value name="1">
+          <real>72</real>
+        </value>
+        <value name="2">
+          <real>18</real>
+        </value>
+        <value name="3">
+          <real>10</real>
+        </value>
+        <value name="4">
+          <real>0</real>
+        </value>
+        <value name="5">
+          <real>0</real>
+        </value>
+        <value name="6">
+          <real>0</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a02</alternativeID>
+      <values>
+        <value name="1">
+          <real>0</real>
+        </value>
+        <value name="2">
+          <real>8</real>
+        </value>
+        <value name="3">
+          <real>16</real>
+        </value>
+        <value name="4">
+          <real>62</real>
+        </value>
+        <value name="5">
+          <real>6</real>
+        </value>
+        <value name="6">
+          <real>8</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a03</alternativeID>
+      <values>
+        <value name="1">
+          <real>0</real>
+        </value>
+        <value name="2">
+          <real>0</real>
+        </value>
+        <value name="3">
+          <real>0</real>
+        </value>
+        <value name="4">
+          <real>12</real>
+        </value>
+        <value name="5">
+          <real>66</real>
+        </value>
+        <value name="6">
+          <real>22</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a04</alternativeID>
+      <values>
+        <value name="1">
+          <real>0</real>
+        </value>
+        <value name="2">
+          <real>10</real>
+        </value>
+        <value name="3">
+          <real>66</real>
+        </value>
+        <value name="4">
+          <real>24</real>
+        </value>
+        <value name="5">
+          <real>0</real>
+        </value>
+        <value name="6">
+          <real>0</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a05</alternativeID>
+      <values>
+        <value name="1">
+          <real>28</real>
+        </value>
+        <value name="2">
+          <real>64</real>
+        </value>
+        <value name="3">
+          <real>8</real>
+        </value>
+        <value name="4">
+          <real>0</real>
+        </value>
+        <value name="5">
+          <real>0</real>
+        </value>
+        <value name="6">
+          <real>0</real>
+        </value>
+      </values>
+    </alternativeValue>
+    <alternativeValue>
+      <alternativeID>a06</alternativeID>
+      <values>
+        <value name="1">
+          <real>0</real>
+        </value>
+        <value name="2">
+          <real>0</real>
+        </value>
+        <value name="3">
+          <real>0</real>
+        </value>
+        <value name="4">
+          <real>2</real>
+        </value>
+        <value name="5">
+          <real>28</real>
+        </value>
+        <value name="6">
+          <real>70</real>
+        </value>
+      </values>
+    </alternativeValue>
+  </alternativesValues>
+</xmcda:XMCDA>

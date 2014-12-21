@@ -30,6 +30,7 @@ input.best.ranks.filename = "best-ranking-hierarchical.xml"
 input.worst.ranks.filename = "worst-ranking-hierarchical.xml"
 parameters.filename = "parameters.xml"
 hierarchy.of.criteria.filename = "hierarchy-of-criteria.xml"
+preference.direction = "criteria-preference-directions.xml"
 
 #OUTPUT FILES:
 reducts.filename <- "reducts-by-alternatives-hierarchical.xml"
@@ -82,6 +83,16 @@ if (is_proper_data) { #optional paramenters
   } else {
     errData <- paste(errData,  characteristic.points.data$errData)
   }
+
+  criteria.data <- rorranking:::getCriteriaPreferenceDirectionFromXmcdaFile(filename=preference.direction,
+                                                                                  performances=performances$data)
+  
+  if (criteria.data$status == "OK") {
+    criteria.preference.directions <- criteria.data$data 
+  } else {
+    errData <- paste(errData,  criteria.data$errData)
+  }
+
   params.data <- rorranking:::getParametersDataFromXmcdaFile(filename=parameters.filename,
                                                              keys=c("strict"), defaults=list("strict" = TRUE))
   
@@ -100,7 +111,7 @@ if (is.null(errFile) && is_proper_data){
       results <- findAllRankRelatedPreferentionalReductsHierarchical(
         perf = performances$data, ranks=ranks.by.nodes.data$data, strict.vf=strict, 
         strong.prefs = preferences$strong, weak.prefs=preferences$weak, indif.prefs=preferences$indif,
-        nums.of.characteristic.points=nums.of.characteristic.points, hierarchy.data=hierarchy.data$data) 
+        nums.of.characteristic.points=nums.of.characteristic.points, criteria=criteria.preference.directions, hierarchy.data=hierarchy.data$data) 
       }, silent=TRUE
   )  
 

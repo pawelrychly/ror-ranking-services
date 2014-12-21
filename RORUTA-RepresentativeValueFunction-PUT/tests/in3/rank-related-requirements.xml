@@ -5,12 +5,15 @@
 	xsi:schemaLocation="http://www.decision-deck.org/2012/XMCDA-2.2.0 http://www.decision-deck.org/xmcda/_downloads/XMCDA-2.2.0.xsd"> 
 	<alternativesValues>
 		<alternativeValue>
-			<alternativeID>MDA</alternativeID>
+			<alternativeID>a03</alternativeID>
 			<value>
 				<interval>
-					<lowerBound><integer>2</integer></lowerBound>
-					<upperBound><integer>1</integer></upperBound>
+					<lowerBound><integer>5</integer></lowerBound>
+					<upperBound><integer>5</integer></upperBound>
 				</interval>
+			</value>
+			<value>
+				<label>0</label>
 			</value>
 		</alternativeValue>
     </alternativesValues>

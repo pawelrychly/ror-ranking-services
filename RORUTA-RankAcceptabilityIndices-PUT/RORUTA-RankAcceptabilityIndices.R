@@ -29,6 +29,7 @@ characteristic.points.filename = "characteristic-points.xml"
 parameters.filename = "parameters.xml"
 rank.related.preferences.filename = "rank-related-requirements.xml"
 intensities.of.preferences.filename = "intensities-of-preferences.xml"
+preference.direction = "criteria-preference-directions.xml"
 
 #OUTPUT FILES:
 result.file <- "rank-acceptability-indices.xml"
@@ -82,6 +83,16 @@ if (is_proper_data) { #optional paramenters
   } else {
     errData <- paste(errData,  characteristic.points.data$errData)
   }
+
+  criteria.data <- rorranking:::getCriteriaPreferenceDirectionFromXmcdaFile(filename=preference.direction,
+                                                                                  performances=performances$data)
+  
+  if (criteria.data$status == "OK") {
+    criteria.preference.directions <- criteria.data$data 
+  } else {
+    errData <- paste(errData,  criteria.data$errData)
+  }
+
   params.data <- rorranking:::getParametersDataFromXmcdaFile(filename=parameters.filename,
                                                              keys=c("strict", "number-of-samples"), defaults=list("strict" = TRUE, "number-of-samples"= 100))
   
@@ -106,7 +117,7 @@ if (is.null(errFile) && is_proper_data){
         weak.intensities.of.prefs = intensities.of.preferences$weak,
         indif.intensities.of.prefs = intensities.of.preferences$indif,
         rank.related.requirements=rank.related.preferences,
-        strict.vf=strict, nums.of.characteristic.points=nums.of.characteristic.points, num.of.samples = number.of.samples) 
+        strict.vf=strict, nums.of.characteristic.points=nums.of.characteristic.points, criteria=criteria.preference.directions, num.of.samples = number.of.samples) 
     }, silent=TRUE
   )  
   if (inherits(tmpErr, 'try-error')){

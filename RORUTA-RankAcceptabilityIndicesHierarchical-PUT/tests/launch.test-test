@@ -1,1 +1,0 @@
-R --slave --vanilla --args "${PWD}/in-test" "${PWD}/out-test" < ../RORUTA-RankAcceptabilityIndicesHierarchical.R

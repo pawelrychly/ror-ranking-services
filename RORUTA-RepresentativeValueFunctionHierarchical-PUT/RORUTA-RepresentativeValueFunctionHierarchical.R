@@ -30,7 +30,8 @@ characteristic.points.filename = "characteristic-points.xml"
 parameters.filename = "parameters.xml"
 rank.related.preferences.filename = "rank-related-requirements.xml"
 intensities.of.preferences.filename = "intensities-of-preferences.xml"
-input.necessary.relations.filename <- "necessary-relations-hierarchical.xml"
+input.necessary.relations.filename = "necessary-relations-hierarchical.xml"
+preference.direction = "criteria-preference-directions.xml"
 #OUTPUT FILES:
 result.file <- "representative-value-function-hierarchical.xml"
 result.file.messages <- "messages.xml"
@@ -99,6 +100,16 @@ if (is_proper_data) { #optional paramenters
   } else {
     errData <- paste(errData,  characteristic.points.data$errData)
   }
+
+  criteria.data <- rorranking:::getCriteriaPreferenceDirectionFromXmcdaFile(filename=preference.direction,
+                                                                                  performances=performances$data)
+  
+  if (criteria.data$status == "OK") {
+    criteria.preference.directions <- criteria.data$data 
+  } else {
+    errData <- paste(errData,  criteria.data$errData)
+  }
+
   params.data <- rorranking:::getParametersDataFromXmcdaFile(filename=parameters.filename,
                                                              keys=c("strict", "compromise"), defaults=list("strict" = TRUE, "compromise"= FALSE))
   
@@ -122,7 +133,8 @@ if (is.null(errFile) && is_proper_data){
         weak.intensities.of.prefs = intensities.of.preferences$weak,
         indif.intensities.of.prefs = intensities.of.preferences$indif,
         rank.related.requirements=rank.related.preferences,
-        strict.vf=strict, nums.of.characteristic.points=nums.of.characteristic.points, is.compromise=compromise, hierarchy.data=hierarchy.data$data) 
+        strict.vf=strict, nums.of.characteristic.points=nums.of.characteristic.points, 
+        criteria=criteria.preference.directions, is.compromise=compromise, hierarchy.data=hierarchy.data$data) 
     }, silent=TRUE
   )  
 
