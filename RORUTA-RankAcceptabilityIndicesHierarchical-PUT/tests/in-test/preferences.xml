@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xmcdaKappalab.xsl"?>
+<xmcda:XMCDA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:xmcda="http://www.decision-deck.org/2012/XMCDA-2.2.0" 
+	xsi:schemaLocation="http://www.decision-deck.org/2012/XMCDA-2.2.0 http://www.decision-deck.org/xmcda/_downloads/XMCDA-2.2.0.xsd"> 
+
+   <alternativesComparisons mcdaConcept="preferences">
+   		<comparisonType>strong</comparisonType>
+        <pairs>
+			<pair>
+				<initial>
+					<alternativeID>EST</alternativeID>
+				</initial>
+				<terminal>
+					<alternativeID>POL</alternativeID>
+				</terminal>
+				 <value>
+					<label>starting-business</label>
+				</value>
+			</pair>
+			<pair>
+				<initial>
+					<alternativeID>EST</alternativeID>
+				</initial>
+				<terminal>
+					<alternativeID>BGR</alternativeID>
+				</terminal>
+				 <value>
+					<label>starting-business</label>
+				</value>
+			</pair>
+			
+			<pair>
+				<initial>
+					<alternativeID>LTU</alternativeID>
+				</initial>
+				<terminal>
+					<alternativeID>LVA</alternativeID>
+				</terminal>
+				 <value>
+					<label>0</label>
+				</value>
+			</pair>
+			<pair>
+				<initial>
+					<alternativeID>MDA</alternativeID>
+				</initial>
+				<terminal>
+					<alternativeID>ROM</alternativeID>
+				</terminal>
+				 <value>
+					<label>0</label>
+				</value>
+			</pair>
+			
+			<pair>
+				<initial>
+					<alternativeID>EST</alternativeID>
+				</initial>
+				<terminal>
+					<alternativeID>BGR</alternativeID>
+				</terminal>
+				 <value>
+					<label>taxes</label>
+				</value>
+			</pair>
+			
+					
+		</pairs>
+    </alternativesComparisons>
+
+
+    <alternativesComparisons mcdaConcept="preferences">
+   		<comparisonType>weak</comparisonType>
+        <pairs>
+        	<pair>
+				<initial>
+					<alternativeID>EST</alternativeID>
+				</initial>
+				<terminal>
+					<alternativeID>SVN</alternativeID>
+				</terminal>
+				 <value>
+					<label>starting-business</label>
+				</value>
+			</pair>
+			<pair>
+				<initial>
+					<alternativeID>SVN</alternativeID>
+				</initial>
+				<terminal>
+					<alternativeID>SVK</alternativeID>
+				</terminal>
+				 <value>
+					<label>0</label>
+				</value>
+			</pair>	
+			<pair>
+				<initial>
+					<alternativeID>BLR</alternativeID>
+				</initial>
+				<terminal>
+					<alternativeID>BGR</alternativeID>
+				</terminal>
+				 <value>
+					<label>taxes</label>
+				</value>
+			</pair>
+
+		</pairs>
+    </alternativesComparisons>
+
+    
+  
+</xmcda:XMCDA>

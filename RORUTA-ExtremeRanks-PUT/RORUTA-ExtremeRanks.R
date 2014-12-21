@@ -29,6 +29,7 @@ characteristic.points.filename = "characteristic-points.xml"
 parameters.filename = "parameters.xml"
 rank.related.preferences.filename = "rank-related-requirements.xml"
 intensities.of.preferences.filename = "intensities-of-preferences.xml"
+preference.direction = "criteria-preference-directions.xml"
 
 #OUTPUT FILES:
 result.file.worst <- "worst-ranking.xml"
@@ -50,6 +51,7 @@ preferences = list("strong" = NULL, "weak" = NULL, "indif" = NULL)
 intensities.of.preferences =  list("strong" = NULL, "weak" = NULL, "indif" = NULL)
 rank.related.preferences = NULL
 nums.of.characteristic.points = NULL
+criteria.preference.directions = NULL
 strict = FALSE
 if (is_proper_data) { #optional paramenters
   intensities.of.preferences.data <- rorranking:::getIntensitiesOfPreferencesFromXmcdaFile(
@@ -82,6 +84,16 @@ if (is_proper_data) { #optional paramenters
   } else {
     errData <- paste(errData,  characteristic.points.data$errData)
   }
+
+  criteria.data <- rorranking:::getCriteriaPreferenceDirectionFromXmcdaFile(filename=preference.direction,
+                                                                                  performances=performances$data)
+  
+  if (criteria.data$status == "OK") {
+    criteria.preference.directions <- criteria.data$data 
+  } else {
+    errData <- paste(errData,  criteria.data$errData)
+  }
+
   params.data <- rorranking:::getParametersDataFromXmcdaFile(filename=parameters.filename,
                                                              keys=c("strict"), defaults=list("strict" = TRUE))
   
@@ -105,7 +117,8 @@ if (is.null(errFile) && is_proper_data){
         weak.intensities.of.prefs = intensities.of.preferences$weak,
         indif.intensities.of.prefs = intensities.of.preferences$indif,
         rank.related.requirements=rank.related.preferences,
-        strict.vf=strict, nums.of.characteristic.points=nums.of.characteristic.points) 
+        strict.vf=strict, nums.of.characteristic.points=nums.of.characteristic.points,
+        criteria=criteria.preference.directions) 
     }, silent=TRUE
   )  
   if (inherits(tmpErr, 'try-error')){

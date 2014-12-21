@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xmcdaKappalab.xsl"?>
+<xmcda:XMCDA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:xmcda="http://www.decision-deck.org/2012/XMCDA-2.2.0" 
+	xsi:schemaLocation="http://www.decision-deck.org/2012/XMCDA-2.2.0 http://www.decision-deck.org/xmcda/_downloads/XMCDA-2.2.0.xsd"> 
+
+   <criteriaValues mcdaConcept="preferenceDirection">
+		<criterionValue>
+			<criterionID>c01</criterionID>
+			<value>
+				<integer>0</integer>
+			</value>
+		</criterionValue>
+		<criterionValue>
+			<criterionID>c02</criterionID>
+			<value>
+				<integer>1</integer>
+			</value>
+		</criterionValue>
+		<criterionValue>
+			<criterionID>c03</criterionID>
+			<value>
+				<integer>0</integer>
+			</value>
+		</criterionValue>
+		<criterionValue>
+			<criterionID>c04</criterionID>
+			<value>
+				<integer>1</integer>
+			</value>
+		</criterionValue>
+    </criteriaValues>
+</xmcda:XMCDA>
