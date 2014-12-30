@@ -223,6 +223,27 @@
                     ]]>
             </xmcda>
         </input>
+
+         <input id="criteria-preference-directions" name="criteria-preference-directions" displayName="criteria preference directions"
+            isoptional="1">
+            
+            <documentation>
+                <description>A set of values associated with criteria that determine their preference direction (0 - gain, 1 - cost).</description>
+            </documentation>
+            <xmcda tag="preferenceDirection">
+                <![CDATA[
+                     <criteriaValues>
+                        <criterionValue>
+                            <criterionID>%1</criterionID>
+                            <value>
+                                <integer>%2</integer>
+                            </value>
+                        </criterionValue>
+                        [...]
+                    </criteriaValues>
+                    ]]>
+            </xmcda>
+        </input>
 		
 		<input id="parameters" name="parameters" displayName="parameters"
             isoptional="0">
