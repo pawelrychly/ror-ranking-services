@@ -7,7 +7,7 @@ c) ROI.plugin.glpk package: install.packages("ROI.plugin.glpk")
 d) RXMCDA package: install.packages("RXMCDA")
 e) rorranking package.
 	In order to install this package you can download a builded tar.gz file, from: 
-		https://github.com/pawelrychly/ror-ranking-services/blob/master/rorranking_1.0.tar.gz
+		https://github.com/pawelrychly/ror-ranking-services/blob/master/rorranking_1.4.tar.gz
 	You can also download a source code from:
 		https://github.com/pawelrychly/rorranking 
 	and build it using a command: 
