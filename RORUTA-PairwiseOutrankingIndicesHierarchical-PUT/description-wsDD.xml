@@ -224,9 +224,9 @@
             <documentation>
                 <description>A set of values associated with criteria that determine their preference direction (0 - gain, 1 - cost).</description>
             </documentation>
-            <xmcda tag="preferenceDirection">
+            <xmcda tag="criteriaValues">
                 <![CDATA[
-                     <criteriaValues>
+                     <criteriaValues mcdaConcept="preferenceDirection">
                         <criterionValue>
                             <criterionID>%1</criterionID>
                             <value>
