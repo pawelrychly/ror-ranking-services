@@ -240,12 +240,14 @@
             <documentation>
                 <description>A set of ids of the criteria that should be taken into account for modification of the performances. This parameter is used only if the modification of performances is searched.</description>
             </documentation>
-            <xmcda tag="criteriaSet">
+            <xmcda tag="criteriaSets">
                 <![CDATA[
+                  <criteriaSets>
                      <criteriaSet>
                         <element><criterionID>[...]</criterionID></element>
                         [...]
-                    </criteriaSet>
+                     </criteriaSet>
+                  <criteriaSets>
                     ]]>
             </xmcda>
         </input>
