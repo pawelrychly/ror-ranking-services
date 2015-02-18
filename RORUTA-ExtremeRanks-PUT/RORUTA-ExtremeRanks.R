@@ -93,7 +93,7 @@ if (is_proper_data) { #optional paramenters
   } else {
     errData <- paste(errData,  criteria.data$errData)
   }
-
+ 
   params.data <- rorranking:::getParametersDataFromXmcdaFile(filename=parameters.filename,
                                                              keys=c("strict"), defaults=list("strict" = TRUE))
   

@@ -17,7 +17,7 @@
               <real>3</real>
             </abscissa>
             <ordinate>
-              <real>0.128125</real>
+              <real>0.13125</real>
             </ordinate>
           </point>
           <point>
@@ -25,7 +25,7 @@
               <real>5</real>
             </abscissa>
             <ordinate>
-              <real>0.24625</real>
+              <real>0.2425</real>
             </ordinate>
           </point>
           <point>
@@ -33,7 +33,7 @@
               <real>10</real>
             </abscissa>
             <ordinate>
-              <real>0.25125</real>
+              <real>0.2525</real>
             </ordinate>
           </point>
         </points>
@@ -55,7 +55,7 @@
               <real>5</real>
             </abscissa>
             <ordinate>
-              <real>0.00500000000000002</real>
+              <real>0.00999999999999998</real>
             </ordinate>
           </point>
           <point>
@@ -63,7 +63,7 @@
               <real>7</real>
             </abscissa>
             <ordinate>
-              <real>0.01</real>
+              <real>0.02</real>
             </ordinate>
           </point>
           <point>
@@ -71,7 +71,7 @@
               <real>10</real>
             </abscissa>
             <ordinate>
-              <real>0.4975</real>
+              <real>0.495</real>
             </ordinate>
           </point>
         </points>
@@ -93,7 +93,7 @@
               <real>3</real>
             </abscissa>
             <ordinate>
-              <real>0.00500000000000002</real>
+              <real>0.00999999999999998</real>
             </ordinate>
           </point>
           <point>
@@ -101,7 +101,7 @@
               <real>5</real>
             </abscissa>
             <ordinate>
-              <real>0.01</real>
+              <real>0.02</real>
             </ordinate>
           </point>
           <point>
@@ -109,7 +109,7 @@
               <real>10</real>
             </abscissa>
             <ordinate>
-              <real>0.0150000000000001</real>
+              <real>0.0299999999999999</real>
             </ordinate>
           </point>
         </points>
@@ -131,7 +131,7 @@
               <real>2</real>
             </abscissa>
             <ordinate>
-              <real>0.22625</real>
+              <real>0.2025</real>
             </ordinate>
           </point>
           <point>
@@ -139,7 +139,7 @@
               <real>5</real>
             </abscissa>
             <ordinate>
-              <real>0.23125</real>
+              <real>0.2125</real>
             </ordinate>
           </point>
           <point>
@@ -147,7 +147,7 @@
               <real>10</real>
             </abscissa>
             <ordinate>
-              <real>0.23625</real>
+              <real>0.2225</real>
             </ordinate>
           </point>
         </points>

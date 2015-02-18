@@ -248,31 +248,31 @@
       <column>
         <alternativeID>a02</alternativeID>
         <value>
-          <real>0</real>
+          <real>100</real>
         </value>
       </column>
       <column>
         <alternativeID>a03</alternativeID>
         <value>
-          <real>0</real>
+          <real>100</real>
         </value>
       </column>
       <column>
         <alternativeID>a04</alternativeID>
         <value>
-          <real>0</real>
+          <real>100</real>
         </value>
       </column>
       <column>
         <alternativeID>a05</alternativeID>
         <value>
-          <real>0</real>
+          <real>100</real>
         </value>
       </column>
       <column>
         <alternativeID>a06</alternativeID>
         <value>
-          <real>0</real>
+          <real>100</real>
         </value>
       </column>
     </row>
@@ -281,7 +281,7 @@
       <column>
         <alternativeID>a01</alternativeID>
         <value>
-          <real>100</real>
+          <real>0</real>
         </value>
       </column>
       <column>
@@ -293,25 +293,25 @@
       <column>
         <alternativeID>a03</alternativeID>
         <value>
-          <real>0</real>
+          <real>100</real>
         </value>
       </column>
       <column>
         <alternativeID>a04</alternativeID>
         <value>
-          <real>100</real>
+          <real>0</real>
         </value>
       </column>
       <column>
         <alternativeID>a05</alternativeID>
         <value>
-          <real>100</real>
+          <real>0</real>
         </value>
       </column>
       <column>
         <alternativeID>a06</alternativeID>
         <value>
-          <real>0</real>
+          <real>100</real>
         </value>
       </column>
     </row>
@@ -320,13 +320,13 @@
       <column>
         <alternativeID>a01</alternativeID>
         <value>
-          <real>100</real>
+          <real>0</real>
         </value>
       </column>
       <column>
         <alternativeID>a02</alternativeID>
         <value>
-          <real>100</real>
+          <real>0</real>
         </value>
       </column>
       <column>
@@ -338,13 +338,13 @@
       <column>
         <alternativeID>a04</alternativeID>
         <value>
-          <real>100</real>
+          <real>0</real>
         </value>
       </column>
       <column>
         <alternativeID>a05</alternativeID>
         <value>
-          <real>100</real>
+          <real>0</real>
         </value>
       </column>
       <column>
@@ -359,19 +359,19 @@
       <column>
         <alternativeID>a01</alternativeID>
         <value>
-          <real>100</real>
+          <real>0</real>
         </value>
       </column>
       <column>
         <alternativeID>a02</alternativeID>
         <value>
-          <real>0</real>
+          <real>100</real>
         </value>
       </column>
       <column>
         <alternativeID>a03</alternativeID>
         <value>
-          <real>0</real>
+          <real>100</real>
         </value>
       </column>
       <column>
@@ -389,7 +389,7 @@
       <column>
         <alternativeID>a06</alternativeID>
         <value>
-          <real>0</real>
+          <real>100</real>
         </value>
       </column>
     </row>
@@ -398,19 +398,19 @@
       <column>
         <alternativeID>a01</alternativeID>
         <value>
-          <real>100</real>
+          <real>0</real>
         </value>
       </column>
       <column>
         <alternativeID>a02</alternativeID>
         <value>
-          <real>0</real>
+          <real>100</real>
         </value>
       </column>
       <column>
         <alternativeID>a03</alternativeID>
         <value>
-          <real>0</real>
+          <real>100</real>
         </value>
       </column>
       <column>
@@ -428,7 +428,7 @@
       <column>
         <alternativeID>a06</alternativeID>
         <value>
-          <real>0</real>
+          <real>100</real>
         </value>
       </column>
     </row>
@@ -437,13 +437,13 @@
       <column>
         <alternativeID>a01</alternativeID>
         <value>
-          <real>100</real>
+          <real>0</real>
         </value>
       </column>
       <column>
         <alternativeID>a02</alternativeID>
         <value>
-          <real>100</real>
+          <real>0</real>
         </value>
       </column>
       <column>
@@ -455,13 +455,13 @@
       <column>
         <alternativeID>a04</alternativeID>
         <value>
-          <real>100</real>
+          <real>0</real>
         </value>
       </column>
       <column>
         <alternativeID>a05</alternativeID>
         <value>
-          <real>100</real>
+          <real>0</real>
         </value>
       </column>
       <column>
@@ -484,31 +484,31 @@
       <column>
         <alternativeID>a02</alternativeID>
         <value>
-          <real>0</real>
+          <real>74</real>
         </value>
       </column>
       <column>
         <alternativeID>a03</alternativeID>
         <value>
-          <real>0</real>
+          <real>100</real>
         </value>
       </column>
       <column>
         <alternativeID>a04</alternativeID>
         <value>
-          <real>0</real>
+          <real>32</real>
         </value>
       </column>
       <column>
         <alternativeID>a05</alternativeID>
         <value>
-          <real>0</real>
+          <real>100</real>
         </value>
       </column>
       <column>
         <alternativeID>a06</alternativeID>
         <value>
-          <real>0</real>
+          <real>50</real>
         </value>
       </column>
     </row>
@@ -517,7 +517,7 @@
       <column>
         <alternativeID>a01</alternativeID>
         <value>
-          <real>100</real>
+          <real>26</real>
         </value>
       </column>
       <column>
@@ -541,13 +541,13 @@
       <column>
         <alternativeID>a05</alternativeID>
         <value>
-          <real>100</real>
+          <real>64</real>
         </value>
       </column>
       <column>
         <alternativeID>a06</alternativeID>
         <value>
-          <real>0</real>
+          <real>26</real>
         </value>
       </column>
     </row>
@@ -556,7 +556,7 @@
       <column>
         <alternativeID>a01</alternativeID>
         <value>
-          <real>100</real>
+          <real>0</real>
         </value>
       </column>
       <column>
@@ -580,7 +580,7 @@
       <column>
         <alternativeID>a05</alternativeID>
         <value>
-          <real>100</real>
+          <real>0</real>
         </value>
       </column>
       <column>
@@ -595,7 +595,7 @@
       <column>
         <alternativeID>a01</alternativeID>
         <value>
-          <real>100</real>
+          <real>68</real>
         </value>
       </column>
       <column>
@@ -625,7 +625,7 @@
       <column>
         <alternativeID>a06</alternativeID>
         <value>
-          <real>0</real>
+          <real>68</real>
         </value>
       </column>
     </row>
@@ -634,19 +634,19 @@
       <column>
         <alternativeID>a01</alternativeID>
         <value>
-          <real>100</real>
+          <real>0</real>
         </value>
       </column>
       <column>
         <alternativeID>a02</alternativeID>
         <value>
-          <real>0</real>
+          <real>36</real>
         </value>
       </column>
       <column>
         <alternativeID>a03</alternativeID>
         <value>
-          <real>0</real>
+          <real>100</real>
         </value>
       </column>
       <column>
@@ -664,7 +664,7 @@
       <column>
         <alternativeID>a06</alternativeID>
         <value>
-          <real>0</real>
+          <real>18</real>
         </value>
       </column>
     </row>
@@ -673,13 +673,13 @@
       <column>
         <alternativeID>a01</alternativeID>
         <value>
-          <real>100</real>
+          <real>50</real>
         </value>
       </column>
       <column>
         <alternativeID>a02</alternativeID>
         <value>
-          <real>100</real>
+          <real>74</real>
         </value>
       </column>
       <column>
@@ -691,13 +691,13 @@
       <column>
         <alternativeID>a04</alternativeID>
         <value>
-          <real>100</real>
+          <real>32</real>
         </value>
       </column>
       <column>
         <alternativeID>a05</alternativeID>
         <value>
-          <real>100</real>
+          <real>82</real>
         </value>
       </column>
       <column>
@@ -720,31 +720,31 @@
       <column>
         <alternativeID>a02</alternativeID>
         <value>
-          <real>0</real>
+          <real>38</real>
         </value>
       </column>
       <column>
         <alternativeID>a03</alternativeID>
         <value>
-          <real>0</real>
+          <real>88</real>
         </value>
       </column>
       <column>
         <alternativeID>a04</alternativeID>
         <value>
-          <real>0</real>
+          <real>88</real>
         </value>
       </column>
       <column>
         <alternativeID>a05</alternativeID>
         <value>
-          <real>0</real>
+          <real>88</real>
         </value>
       </column>
       <column>
         <alternativeID>a06</alternativeID>
         <value>
-          <real>0</real>
+          <real>76</real>
         </value>
       </column>
     </row>
@@ -753,7 +753,7 @@
       <column>
         <alternativeID>a01</alternativeID>
         <value>
-          <real>100</real>
+          <real>62</real>
         </value>
       </column>
       <column>
@@ -765,25 +765,25 @@
       <column>
         <alternativeID>a03</alternativeID>
         <value>
-          <real>0</real>
+          <real>100</real>
         </value>
       </column>
       <column>
         <alternativeID>a04</alternativeID>
         <value>
-          <real>0</real>
+          <real>100</real>
         </value>
       </column>
       <column>
         <alternativeID>a05</alternativeID>
         <value>
-          <real>0</real>
+          <real>100</real>
         </value>
       </column>
       <column>
         <alternativeID>a06</alternativeID>
         <value>
-          <real>0</real>
+          <real>90</real>
         </value>
       </column>
     </row>
@@ -792,13 +792,13 @@
       <column>
         <alternativeID>a01</alternativeID>
         <value>
-          <real>100</real>
+          <real>12</real>
         </value>
       </column>
       <column>
         <alternativeID>a02</alternativeID>
         <value>
-          <real>100</real>
+          <real>0</real>
         </value>
       </column>
       <column>
@@ -822,7 +822,7 @@
       <column>
         <alternativeID>a06</alternativeID>
         <value>
-          <real>0</real>
+          <real>48</real>
         </value>
       </column>
     </row>
@@ -831,13 +831,13 @@
       <column>
         <alternativeID>a01</alternativeID>
         <value>
-          <real>100</real>
+          <real>12</real>
         </value>
       </column>
       <column>
         <alternativeID>a02</alternativeID>
         <value>
-          <real>100</real>
+          <real>0</real>
         </value>
       </column>
       <column>
@@ -861,7 +861,7 @@
       <column>
         <alternativeID>a06</alternativeID>
         <value>
-          <real>0</real>
+          <real>48</real>
         </value>
       </column>
     </row>
@@ -870,13 +870,13 @@
       <column>
         <alternativeID>a01</alternativeID>
         <value>
-          <real>100</real>
+          <real>12</real>
         </value>
       </column>
       <column>
         <alternativeID>a02</alternativeID>
         <value>
-          <real>100</real>
+          <real>0</real>
         </value>
       </column>
       <column>
@@ -900,7 +900,7 @@
       <column>
         <alternativeID>a06</alternativeID>
         <value>
-          <real>0</real>
+          <real>48</real>
         </value>
       </column>
     </row>
@@ -909,31 +909,31 @@
       <column>
         <alternativeID>a01</alternativeID>
         <value>
-          <real>100</real>
+          <real>24</real>
         </value>
       </column>
       <column>
         <alternativeID>a02</alternativeID>
         <value>
-          <real>100</real>
+          <real>10</real>
         </value>
       </column>
       <column>
         <alternativeID>a03</alternativeID>
         <value>
-          <real>100</real>
+          <real>52</real>
         </value>
       </column>
       <column>
         <alternativeID>a04</alternativeID>
         <value>
-          <real>100</real>
+          <real>52</real>
         </value>
       </column>
       <column>
         <alternativeID>a05</alternativeID>
         <value>
-          <real>100</real>
+          <real>52</real>
         </value>
       </column>
       <column>
@@ -956,31 +956,31 @@
       <column>
         <alternativeID>a02</alternativeID>
         <value>
-          <real>0</real>
+          <real>70</real>
         </value>
       </column>
       <column>
         <alternativeID>a03</alternativeID>
         <value>
-          <real>0</real>
+          <real>100</real>
         </value>
       </column>
       <column>
         <alternativeID>a04</alternativeID>
         <value>
-          <real>0</real>
+          <real>88</real>
         </value>
       </column>
       <column>
         <alternativeID>a05</alternativeID>
         <value>
-          <real>0</real>
+          <real>98</real>
         </value>
       </column>
       <column>
         <alternativeID>a06</alternativeID>
         <value>
-          <real>0</real>
+          <real>86</real>
         </value>
       </column>
     </row>
@@ -989,7 +989,7 @@
       <column>
         <alternativeID>a01</alternativeID>
         <value>
-          <real>100</real>
+          <real>30</real>
         </value>
       </column>
       <column>
@@ -1007,7 +1007,7 @@
       <column>
         <alternativeID>a04</alternativeID>
         <value>
-          <real>0</real>
+          <real>100</real>
         </value>
       </column>
       <column>
@@ -1019,7 +1019,7 @@
       <column>
         <alternativeID>a06</alternativeID>
         <value>
-          <real>0</real>
+          <real>88</real>
         </value>
       </column>
     </row>
@@ -1028,7 +1028,7 @@
       <column>
         <alternativeID>a01</alternativeID>
         <value>
-          <real>100</real>
+          <real>0</real>
         </value>
       </column>
       <column>
@@ -1052,13 +1052,13 @@
       <column>
         <alternativeID>a05</alternativeID>
         <value>
-          <real>100</real>
+          <real>0</real>
         </value>
       </column>
       <column>
         <alternativeID>a06</alternativeID>
         <value>
-          <real>0</real>
+          <real>10</real>
         </value>
       </column>
     </row>
@@ -1067,13 +1067,13 @@
       <column>
         <alternativeID>a01</alternativeID>
         <value>
-          <real>100</real>
+          <real>12</real>
         </value>
       </column>
       <column>
         <alternativeID>a02</alternativeID>
         <value>
-          <real>100</real>
+          <real>0</real>
         </value>
       </column>
       <column>
@@ -1097,7 +1097,7 @@
       <column>
         <alternativeID>a06</alternativeID>
         <value>
-          <real>0</real>
+          <real>66</real>
         </value>
       </column>
     </row>
@@ -1106,7 +1106,7 @@
       <column>
         <alternativeID>a01</alternativeID>
         <value>
-          <real>100</real>
+          <real>2</real>
         </value>
       </column>
       <column>
@@ -1118,7 +1118,7 @@
       <column>
         <alternativeID>a03</alternativeID>
         <value>
-          <real>0</real>
+          <real>100</real>
         </value>
       </column>
       <column>
@@ -1136,7 +1136,7 @@
       <column>
         <alternativeID>a06</alternativeID>
         <value>
-          <real>0</real>
+          <real>28</real>
         </value>
       </column>
     </row>
@@ -1145,31 +1145,31 @@
       <column>
         <alternativeID>a01</alternativeID>
         <value>
-          <real>100</real>
+          <real>14</real>
         </value>
       </column>
       <column>
         <alternativeID>a02</alternativeID>
         <value>
-          <real>100</real>
+          <real>12</real>
         </value>
       </column>
       <column>
         <alternativeID>a03</alternativeID>
         <value>
-          <real>100</real>
+          <real>90</real>
         </value>
       </column>
       <column>
         <alternativeID>a04</alternativeID>
         <value>
-          <real>100</real>
+          <real>34</real>
         </value>
       </column>
       <column>
         <alternativeID>a05</alternativeID>
         <value>
-          <real>100</real>
+          <real>72</real>
         </value>
       </column>
       <column>

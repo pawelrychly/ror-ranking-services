@@ -60,6 +60,7 @@ if (ranks$status != "OK") {
 preferences = list("strong" = NULL, "weak" = NULL, "indif" = NULL)
 nums.of.characteristic.points = NULL
 nec.relations = list()
+criteria.preference.directions = NULL
 strict = FALSE
 if (is_proper_data) { #optional paramenters
   preferences.data <- rorranking:::getPreferencesFromXmcdaFile(filename=preferences.filename, performances=performances$data)

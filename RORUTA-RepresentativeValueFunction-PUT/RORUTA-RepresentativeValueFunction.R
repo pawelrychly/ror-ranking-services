@@ -60,6 +60,8 @@ rank.related.preferences = NULL
 nums.of.characteristic.points = NULL
 strict = FALSE
 compromise = FALSE
+criteria.preference.directions = NULL
+
 if (is_proper_data) { #optional paramenters
   intensities.of.preferences.data <- rorranking:::getIntensitiesOfPreferencesFromXmcdaFile(
     filename=intensities.of.preferences.filename ,performances=performances$data)

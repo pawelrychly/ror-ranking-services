@@ -67,6 +67,7 @@ if (ranks.by.nodes.data$status != "OK") {
 #optional
 preferences = list("strong" = NULL, "weak" = NULL, "indif" = NULL)
 nums.of.characteristic.points = NULL
+criteria.preference.directions = NULL
 
 strict = FALSE
 if (is_proper_data) { #optional paramenters

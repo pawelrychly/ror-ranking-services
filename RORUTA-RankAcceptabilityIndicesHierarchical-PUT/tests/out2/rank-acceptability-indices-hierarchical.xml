@@ -151,16 +151,16 @@
           <real>0</real>
         </value>
         <value name="3">
-          <real>66</real>
+          <real>0</real>
         </value>
         <value name="4">
-          <real>34</real>
+          <real>0</real>
         </value>
         <value name="5">
           <real>0</real>
         </value>
         <value name="6">
-          <real>0</real>
+          <real>100</real>
         </value>
       </values>
     </alternativeValue>
@@ -168,13 +168,13 @@
       <alternativeID>a02</alternativeID>
       <values>
         <value name="1">
-          <real>100</real>
+          <real>0</real>
         </value>
         <value name="2">
           <real>0</real>
         </value>
         <value name="3">
-          <real>0</real>
+          <real>100</real>
         </value>
         <value name="4">
           <real>0</real>
@@ -214,16 +214,16 @@
       <alternativeID>a04</alternativeID>
       <values>
         <value name="1">
-          <real>92</real>
+          <real>0</real>
         </value>
         <value name="2">
           <real>0</real>
         </value>
         <value name="3">
-          <real>8</real>
+          <real>0</real>
         </value>
         <value name="4">
-          <real>0</real>
+          <real>100</real>
         </value>
         <value name="5">
           <real>0</real>
@@ -237,16 +237,16 @@
       <alternativeID>a05</alternativeID>
       <values>
         <value name="1">
-          <real>92</real>
+          <real>0</real>
         </value>
         <value name="2">
           <real>0</real>
         </value>
         <value name="3">
-          <real>8</real>
+          <real>0</real>
         </value>
         <value name="4">
-          <real>0</real>
+          <real>100</real>
         </value>
         <value name="5">
           <real>0</real>
@@ -297,10 +297,10 @@
           <real>0</real>
         </value>
         <value name="5">
-          <real>60</real>
+          <real>0</real>
         </value>
         <value name="6">
-          <real>40</real>
+          <real>100</real>
         </value>
       </values>
     </alternativeValue>
@@ -386,10 +386,10 @@
           <real>0</real>
         </value>
         <value name="4">
-          <real>42</real>
+          <real>0</real>
         </value>
         <value name="5">
-          <real>58</real>
+          <real>100</real>
         </value>
         <value name="6">
           <real>0</real>
@@ -428,7 +428,7 @@
           <real>0</real>
         </value>
         <value name="2">
-          <real>6</real>
+          <real>0</real>
         </value>
         <value name="3">
           <real>0</real>
@@ -437,10 +437,10 @@
           <real>0</real>
         </value>
         <value name="5">
-          <real>94</real>
+          <real>0</real>
         </value>
         <value name="6">
-          <real>0</real>
+          <real>100</real>
         </value>
       </values>
     </alternativeValue>
@@ -451,7 +451,7 @@
           <real>0</real>
         </value>
         <value name="2">
-          <real>56</real>
+          <real>0</real>
         </value>
         <value name="3">
           <real>0</real>
@@ -460,7 +460,7 @@
           <real>0</real>
         </value>
         <value name="5">
-          <real>44</real>
+          <real>100</real>
         </value>
         <value name="6">
           <real>0</real>
@@ -666,10 +666,10 @@
           <real>0</real>
         </value>
         <value name="4">
-          <real>40</real>
+          <real>0</real>
         </value>
         <value name="5">
-          <real>60</real>
+          <real>100</real>
         </value>
         <value name="6">
           <real>0</real>
