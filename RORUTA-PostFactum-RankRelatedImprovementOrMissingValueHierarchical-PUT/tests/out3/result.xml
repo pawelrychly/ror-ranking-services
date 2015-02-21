@@ -4,7 +4,7 @@
     <alternativeValue>
       <alternativeID>a01</alternativeID>
       <value>
-        <real>0.472500000000011</real>
+        <real>0.445</real>
       </value>
     </alternativeValue>
   </alternativesValues>
@@ -12,7 +12,7 @@
     <alternativeValue>
       <alternativeID>a01</alternativeID>
       <value>
-        <real>0.950000000000003</real>
+        <real>0.9</real>
       </value>
     </alternativeValue>
   </alternativesValues>
@@ -20,7 +20,7 @@
     <alternativeValue>
       <alternativeID>a01</alternativeID>
       <value>
-        <real>0.95</real>
+        <real>0.9</real>
       </value>
     </alternativeValue>
   </alternativesValues>
@@ -28,7 +28,7 @@
     <alternativeValue>
       <alternativeID>a01</alternativeID>
       <value>
-        <real>0.950000000000005</real>
+        <real>0.9</real>
       </value>
     </alternativeValue>
   </alternativesValues>
@@ -36,7 +36,7 @@
     <alternativeValue>
       <alternativeID>a01</alternativeID>
       <value>
-        <real>0.969999999999999</real>
+        <real>0.94</real>
       </value>
     </alternativeValue>
   </alternativesValues>
