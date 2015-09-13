@@ -259,22 +259,26 @@
             displayName="pairwise outranking indices">
             
             <documentation>
-                <description>An alternatives matrix of the pairwise outranking indices. The output should be a valid XMCDA document which main tag is alternativesMatrix. </description>
+                <description>A list of all pairwise outranking indices. The returned value is an XMCDA document whose main tag is alternativesComparisons. </description>
             </documentation>
-            <xmcda tag="alternativesMatrix">
+            <xmcda tag="alternativesComparisons">
                 <![CDATA[
-                    <alternativesMatrix>
-                        <row>
-                            <alternativeID>[...]</alternativeID>
-                            <column>
-                                <alternativeID>[...]</alternativeID>
-                                <value><real>[...]</real></value>
-                            </column>
-                            [...]
-                        </row>
-                        [...]
-                    </alternativesMatrix>
-                    [...]
+                    <alternativesComparisons>
+                        <pairs>
+                          <pair>
+                            <initial>
+                              <alternativeID>[...]</alternativeID>
+                            </initial>
+                            <terminal>
+                              <alternativeID>[...]</alternativeID>
+                            </terminal>
+                            <value>
+                                <real>[...]</real>
+                            </value>
+                          </pair>
+                          [...]
+                      </pairs>
+                    </alternativesComparisons>
                     ]]>
             </xmcda>
         </output>

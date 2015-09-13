@@ -150,8 +150,16 @@ if (execFlag) {
              namespace = c("xsi" = "http://www.w3.org/2001/XMLSchema-instance", "xmcda" = "http://www.decision-deck.org/2012/XMCDA-2.2.0"),
              parent=outTree)
   
+  ids <- rownames(performances$data)
   for (nodeid in names(results)) {
-    rorranking:::putAlternativesMatrix(tree=outTree, alternativesMatrix=results[[nodeid]], attributes=c("id"=nodeid))
+    results.matrix <- matrix(nrow=0, ncol=3);
+    for (id1 in ids) {
+      for (id2 in ids) {
+          pair.value <- c(id1, id2, results[[nodeid]][id1,id2]);
+          results.matrix <- rbind(results.matrix, pair.value);
+      }
+    }
+    rorranking:::putAlternativesComparisonsWithAttributes(outTree, results.matrix , attributes=c("id"=nodeid))
   }
   saveXML(outTree, file=result.file)
 

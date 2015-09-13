@@ -1,1183 +1,2003 @@
 <?xml version="1.0"?>
 <xmcda:XMCDA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xmcda="http://www.decision-deck.org/2012/XMCDA-2.2.0" xsi:schemaLocation="http://www.decision-deck.org/2012/XMCDA-2.2.0 http://www.decision-deck.org/xmcda/_downloads/XMCDA-2.2.0.xsd">
-  <alternativesMatrix id="nodes11">
-    <row>
-      <alternativeID>a01</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+  <alternativesComparisons id="nodes11">
+    <pairs>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-    </row>
-    <row>
-      <alternativeID>a02</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-    </row>
-    <row>
-      <alternativeID>a03</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-    </row>
-    <row>
-      <alternativeID>a04</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-    </row>
-    <row>
-      <alternativeID>a05</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-    </row>
-    <row>
-      <alternativeID>a06</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-    </row>
-  </alternativesMatrix>
-  <alternativesMatrix id="nodes12">
-    <row>
-      <alternativeID>a01</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+      </pair>
+    </pairs>
+  </alternativesComparisons>
+  <alternativesComparisons id="nodes12">
+    <pairs>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-    </row>
-    <row>
-      <alternativeID>a02</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-    </row>
-    <row>
-      <alternativeID>a03</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-    </row>
-    <row>
-      <alternativeID>a04</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-    </row>
-    <row>
-      <alternativeID>a05</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-    </row>
-    <row>
-      <alternativeID>a06</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-    </row>
-  </alternativesMatrix>
-  <alternativesMatrix id="nodes1">
-    <row>
-      <alternativeID>a01</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+      </pair>
+    </pairs>
+  </alternativesComparisons>
+  <alternativesComparisons id="nodes1">
+    <pairs>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-    </row>
-    <row>
-      <alternativeID>a02</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-    </row>
-    <row>
-      <alternativeID>a03</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-    </row>
-    <row>
-      <alternativeID>a04</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-    </row>
-    <row>
-      <alternativeID>a05</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-    </row>
-    <row>
-      <alternativeID>a06</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-    </row>
-  </alternativesMatrix>
-  <alternativesMatrix id="nodes2">
-    <row>
-      <alternativeID>a01</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+      </pair>
+    </pairs>
+  </alternativesComparisons>
+  <alternativesComparisons id="nodes2">
+    <pairs>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-    </row>
-    <row>
-      <alternativeID>a02</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-    </row>
-    <row>
-      <alternativeID>a03</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-    </row>
-    <row>
-      <alternativeID>a04</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-    </row>
-    <row>
-      <alternativeID>a05</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-    </row>
-    <row>
-      <alternativeID>a06</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-    </row>
-  </alternativesMatrix>
-  <alternativesMatrix id="nodes">
-    <row>
-      <alternativeID>a01</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+      </pair>
+    </pairs>
+  </alternativesComparisons>
+  <alternativesComparisons id="nodes">
+    <pairs>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a01</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-    </row>
-    <row>
-      <alternativeID>a02</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a02</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-    </row>
-    <row>
-      <alternativeID>a03</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a03</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-    </row>
-    <row>
-      <alternativeID>a04</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a04</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-    </row>
-    <row>
-      <alternativeID>a05</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a05</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>0</real>
         </value>
-      </column>
-    </row>
-    <row>
-      <alternativeID>a06</alternativeID>
-      <column>
-        <alternativeID>a01</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a01</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a02</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a02</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a03</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a03</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a04</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a04</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a05</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a05</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-      <column>
-        <alternativeID>a06</alternativeID>
+      </pair>
+      <pair>
+        <initial>
+          <alternativeID>a06</alternativeID>
+        </initial>
+        <terminal>
+          <alternativeID>a06</alternativeID>
+        </terminal>
         <value>
           <real>100</real>
         </value>
-      </column>
-    </row>
-  </alternativesMatrix>
+      </pair>
+    </pairs>
+  </alternativesComparisons>
 </xmcda:XMCDA>

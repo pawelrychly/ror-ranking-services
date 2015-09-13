@@ -8,7 +8,7 @@
 			</value>
 		</parameter>
 		<parameter name="number-of-samples">
-			<value><integer>500</integer></value>
+			<value><integer>100</integer></value>
 		</parameter>
 	</methodParameters>
 </xmcda:XMCDA>

@@ -290,22 +290,26 @@
             displayName="pairwise outranking indices - hierarchical">
             
             <documentation>
-                <description>A set of matrices of the pair-wise outranking indices. The output should be a valid XMCDA document which main tag is alternativesMatrix. Each node of the hierarchy should be described by another alternativesMatrix tag. The id of node should be marked in the id attribute of these tag.</description>
+                <description>A list of all pairwise outranking indices. The returned value is an XMCDA document whose main tag is alternativesComparisons. Each node of the hierarchy should be described by another alternativesComparisons tag. The id of node should be marked in the id attribute of these tag.</description>
             </documentation>
-            <xmcda tag="alternativesMatrix">
+            <xmcda tag="alternativesComparisons">
                 <![CDATA[
-                    <alternativesMatrix id='%1'>
-                        <row>
-                            <alternativeID>[...]</alternativeID>
-                            <column>
-                                <alternativeID>[...]</alternativeID>
-                                <value><real>[...]</real></value>
-                            </column>
-                            [...]
-                        </row>
-                        [...]
-                    </alternativesMatrix>
-                    [...]
+                    <alternativesComparisons id=%1>
+                        <pairs>
+                          <pair>
+                            <initial>
+                              <alternativeID>[...]</alternativeID>
+                            </initial>
+                            <terminal>
+                              <alternativeID>[...]</alternativeID>
+                            </terminal>
+                            <value>
+                                <real>[...]</real>
+                            </value>
+                          </pair>
+                          [...]
+                      </pairs>
+                    </alternativesComparisons>
                     ]]>
             </xmcda>
         </output>
