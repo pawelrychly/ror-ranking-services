@@ -3,7 +3,7 @@
     <program provider="PUT"
         name="RORUTA-PairwiseOutrankingIndices"
         displayName="RORUTA-PairwiseOutrankingIndices"
-        version="1.0" />
+        version="1.1" />
     <documentation>
         <description>The procedure finds pairwise outranking indices matrix for a given problem.</description>
         <contact>Pawel Rychly (pawelrychly@gmail.com).</contact>
